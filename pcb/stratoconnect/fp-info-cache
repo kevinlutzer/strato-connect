@@ -1,4 +1,4 @@
-20253963831937928
+20257337016185973
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -56574,6 +56574,13 @@ Dual BNC Amphenol Horizontal
 3
 2
 Kevin_Lutzer_Lbr
+Diode-TO-277B
+TO-227B https://media.digikey.com/pdf/Data%20Sheets/Littelfuse%20PDFs/DST2050S.pdf
+TO-277B
+0
+9
+2
+Kevin_Lutzer_Lbr
 LED_SK6805_EC15_1.5x1.5mm
 http://www.newstar-ledstrip.com/product/20181119172602110.pdf
 LED RGB NeoPixel
@@ -66233,6 +66240,13 @@ UQFN NoLead
 0
 75
 49
+Package_DFN_QFN
+VDFN-7_2.1x2.1mm
+8-Lead Very Thin Dual Flatpack No-Lead (LZ) - 2x3x0.9 mm Body [VDFN] (see Microchip Packaging Specification 00000049BS.pdf)
+DFN 0.5
+0
+7
+7
 Package_DFN_QFN
 VDFN-8-1EP_2x2mm_P0.5mm_EP0.9x1.7mm
 8-Lead Very Thin Dual Flatpack No-Lead (LZ) - 2x3x0.9 mm Body [VDFN] (see Microchip Packaging Specification 00000049BS.pdf)
