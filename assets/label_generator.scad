@@ -17,7 +17,7 @@ module generateLabel(width, height, radius, label, ts) {
             }
         }
 
-        text(label, font="Liberation Sans", valign="center", halign="center", size=ts);        
+        text(label, font="Liberation SansL:style=Bold", valign="center", halign="center", size=ts);        
     }
 
             
@@ -46,5 +46,12 @@ module generatePinHeader(width, height, radius, ts, labels, pin_pitch=2.54) {
 
 
 //generatePinHeader(3.75, 4, 0.25, 1.2, ["TX", "GND", "RX"], 1.25); // UART header
-generatePinHeader(3.75, 6, 0.25, 1.2, ["GND", "VIN", "SDA", "SCL", "INT"], 1.25); // UART header
-//generatePinHeader(3.75, 4, 0.25, 1.2, ["VIN", "GND"], 2.54); // UART header
+//generatePinHeader(3.75, 6, 0.25, 1.2, ["GND", "VIN", "SDA", "SCL", "INT"], 1.25); // UART header
+//generatePinHeader(3.75, 4, 0.25, 1.2, ["GND", "VIN"], 2.54); // Power header
+//generateLabel(11.5, 1.75, 0.25, "StratoConnect", 1.2);
+//generateLabel(5, 1.75, 0.25, "Rev 1", 1.2);
+//generateLabel(6, 1.75, 0.25, "VIN=5V", 1.2);
+//generateLabel(17.5, 1.75, 0.25, "Bypass Level Shifting", 1.2);
+//generateLabel(4.5, 1.75, 0.25, "TRIG", 1.2);
+//generateLabel(3.75, 1.75, 0.25, "RST", 1.2);
+generatePinHeader(2.5, 4, 0.25, 1.2, ["TX", "RX"], 2.54); // Power header
