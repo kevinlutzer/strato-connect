@@ -89,7 +89,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "/Users/kevinlutzer/Projects/StratoConnect/fab")
+      (outputdirectory "/Users/kevinlutzer/Projects/StratoConnect/fab/gerbers_v1")
     )
   )
 
@@ -306,7 +306,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c09a77f7-3253-44ef-a396-f97a71c00ca6)
     )
-    (fp_text value "47uF" (at 0 3.7 90) (layer "F.Fab") hide
+    (fp_text value "47u" (at 0 3.7 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ad4e9a73-4e52-4a89-902a-2401509a8da3)
     )
@@ -497,7 +497,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp bea5c437-f4a2-4af0-ad50-29a1f1394773)
     )
-    (fp_text value "4.7uF" (at 0 1.43) (layer "F.Fab") hide
+    (fp_text value "100n" (at 0 1.43) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 43817f3b-3204-43ee-8fbc-5f5cca0273bb)
     )
@@ -1824,13 +1824,13 @@
     (tags "capacitor")
     (property "Sheetfile" "stratoconnect.kicad_sch")
     (property "Sheetname" "")
-    (path "/f964b130-fde2-4fac-b241-cbd7acba2933")
+    (path "/0940ec14-777c-4385-a363-05bd08c649d7")
     (attr smd)
     (fp_text reference "C1" (at 2.25 4.05) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3358b62c-fa07-4a31-b19c-92a2ba5a496d)
     )
-    (fp_text value "4.7uF" (at 0 1.43) (layer "F.Fab") hide
+    (fp_text value "100n" (at 0 1.43) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 031a2c71-0797-4307-9a93-a40fb728d58b)
     )
@@ -2030,7 +2030,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f64fb4d4-e498-46aa-aa03-1448e0f65cc0)
     )
-    (fp_text value "47uF" (at 0 3.7 90) (layer "F.Fab") hide
+    (fp_text value "47u" (at 0 3.7 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f3277104-d8b2-43f9-8be7-7b4f3d444d71)
     )
@@ -2393,7 +2393,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a299d8dd-d03b-431f-a7c6-0810c76b912f)
     )
-    (fp_text value "100nF" (at 0 1.43) (layer "F.Fab") hide
+    (fp_text value "1u" (at 0 1.43) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp be755248-f8d5-428c-918a-be343c9a035e)
     )
@@ -2636,13 +2636,13 @@
     (tags "capacitor")
     (property "Sheetfile" "stratoconnect.kicad_sch")
     (property "Sheetname" "")
-    (path "/0940ec14-777c-4385-a363-05bd08c649d7")
+    (path "/f964b130-fde2-4fac-b241-cbd7acba2933")
     (attr smd)
     (fp_text reference "C3" (at 0.9 -1.45 180) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6a48d9df-b842-4dfb-942f-ead40ed2c604)
     )
-    (fp_text value "1uF" (at 0 1.43 90) (layer "F.Fab") hide
+    (fp_text value "1u" (at 0 1.43 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1806e742-e1fc-427c-b862-13e036f11b4f)
     )
@@ -3051,13 +3051,13 @@
     (tags "capacitor")
     (property "Sheetfile" "stratoconnect.kicad_sch")
     (property "Sheetname" "")
-    (path "/3f74c64e-f085-40aa-83ab-c6d1f7d3a1e9")
+    (path "/b2d653cd-7bae-4d24-8a1a-857de5baa1e4")
     (attr smd)
     (fp_text reference "C6" (at -2.1 0.1 180) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 53f5f3c4-8cc9-4efd-8d91-dfac11ca0621)
     )
-    (fp_text value "100nF" (at 0 1.43 90) (layer "F.Fab") hide
+    (fp_text value "100n" (at 0 1.43 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3284336e-1a43-4940-b6fd-a045c70c8861)
     )
@@ -3141,7 +3141,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4591e24c-fa02-4d32-bee6-61f1ffcb0060)
     )
-    (fp_text value "1uF" (at 0 1.43) (layer "F.Fab") hide
+    (fp_text value "1u" (at 0 1.43) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2922cffc-0873-41a4-a9f1-dde96388e58a)
     )
@@ -3438,7 +3438,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1fd11a4b-e05a-46ab-805a-c0bc939961e1)
     )
-    (fp_text value "100nF" (at 0 1.43) (layer "F.Fab") hide
+    (fp_text value "100n" (at 0 1.43) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp eb08b735-1af7-469f-b0f2-4c7b281dd9b7)
     )
