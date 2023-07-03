@@ -3886,7 +3886,7 @@
     (property "Value" "Conn_01x02_Pin" (at 151.765 97.79 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 153.67 100.33 0)
+    (property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" (at 153.67 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 100.33 0)
@@ -4120,20 +4120,20 @@
   (symbol (lib_id "Connector:Conn_Coaxial") (at 266.065 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dd4480ca-8dcf-4129-957c-4e20240410a2)
-    (property "Reference" "J1" (at 269.24 109.5131 0)
+    (property "Reference" "J1" (at 269.24 109.5132 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Conn_Coaxial" (at 269.24 112.0531 0)
+    (property "Value" "Conn_Coaxial" (at 269.24 112.0532 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_Coaxial:SMA_Molex_73251-2120_EdgeMount_Horizontal" (at 266.065 110.49 0)
+    (property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-143_Horizontal" (at 266.065 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (at 266.065 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4639d85d-ec62-440a-a23a-7d60ff081d17))
-    (pin "2" (uuid 71e2944b-cc62-43f5-af90-fc29866f15ad))
+    (pin "1" (uuid 6fc31f32-5929-4a80-a007-6df2a98e0b69))
+    (pin "2" (uuid 29eb40f7-1b33-45fe-a57f-cfdeb0dd383e))
     (instances
       (project "stratoconnect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
@@ -4188,8 +4188,8 @@
     (property "Datasheet" "~" (at 216.535 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 659e8efb-0eb9-408a-ab8b-f94f51330ea1))
-    (pin "2" (uuid 530269a1-5237-43a0-940b-b9e5fa762871))
+    (pin "1" (uuid 461c2669-891f-4132-a875-a9172573eb85))
+    (pin "2" (uuid 4f799cfd-4e01-461b-9227-0a7998f74fc9))
     (instances
       (project "stratoconnect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"

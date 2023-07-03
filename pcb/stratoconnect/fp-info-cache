@@ -1,4 +1,4 @@
-21759676373346280
+21761364772051653
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59716,6 +59716,13 @@ LED RGB NeoPixel
 0
 4
 4
+Kevin_Lutzer_Lbr
+L_Wurth_74404043033A
+Semi-Shielded High Saturation Power Inductor, body 4x4mm, https://www.we-online.com/catalog/en/WE-LQSH#/articles/WE-LQSH-4020
+SMT
+0
+2
+2
 Kevin_Lutzer_Lbr
 R-667799
 
