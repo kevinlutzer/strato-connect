@@ -1230,14 +1230,14 @@
         )
       )
     )
-    (symbol "MCU_Microchip_ATmega:ATmega328PB-A" (in_bom yes) (on_board yes)
+    (symbol "MCU_Microchip_ATmega:ATmega328PB-M" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -12.7 36.83 0)
         (effects (font (size 1.27 1.27)) (justify left bottom))
       )
-      (property "Value" "ATmega328PB-A" (at 2.54 -36.83 0)
+      (property "Value" "ATmega328PB-M" (at 2.54 -36.83 0)
         (effects (font (size 1.27 1.27)) (justify left top))
       )
-      (property "Footprint" "Package_QFP:TQFP-32_7x7mm_P0.8mm" (at 0 0 0)
+      (property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" (at 0 0 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
       (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" (at 0 0 0)
@@ -1246,19 +1246,19 @@
       (property "ki_keywords" "AVR 8bit Microcontroller MegaAVR" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, TQFP-32" (at 0 0 0)
+      (property "ki_description" "20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, QFN-32" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "TQFP*7x7mm*P0.8mm*" (at 0 0 0)
+      (property "ki_fp_filters" "QFN*1EP*5x5mm*P0.5mm*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "ATmega328PB-A_0_1"
+      (symbol "ATmega328PB-M_0_1"
         (rectangle (start -12.7 -35.56) (end 12.7 35.56)
           (stroke (width 0.254) (type default))
           (fill (type background))
         )
       )
-      (symbol "ATmega328PB-A_1_1"
+      (symbol "ATmega328PB-M_1_1"
         (pin bidirectional line (at 15.24 -20.32 180) (length 2.54)
           (name "PD3" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -1362,6 +1362,10 @@
         (pin bidirectional line (at 15.24 -17.78 180) (length 2.54)
           (name "PD2" (effects (font (size 1.27 1.27))))
           (number "32" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -38.1 90) (length 2.54) hide
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "33" (effects (font (size 1.27 1.27))))
         )
         (pin power_in line (at 0 38.1 270) (length 2.54)
           (name "VCC" (effects (font (size 1.27 1.27))))
@@ -1526,7 +1530,7 @@
     )
   )
 
-  (junction (at 56.515 23.495) (diameter 0) (color 0 0 0 0)
+  (junction (at 77.47 24.13) (diameter 0) (color 0 0 0 0)
     (uuid 01ce8257-c13e-4690-8af2-37b3f8dd8dd1)
   )
   (junction (at 242.57 140.97) (diameter 0) (color 0 0 0 0)
@@ -1538,7 +1542,7 @@
   (junction (at 247.015 100.965) (diameter 0) (color 0 0 0 0)
     (uuid 1a3a014e-6f6f-4ccb-be2a-23776b467588)
   )
-  (junction (at 51.435 23.495) (diameter 0) (color 0 0 0 0)
+  (junction (at 72.39 24.13) (diameter 0) (color 0 0 0 0)
     (uuid 1efb312f-eff3-4b4a-8f1e-8b62d0f375f3)
   )
   (junction (at 229.87 49.53) (diameter 0) (color 0 0 0 0)
@@ -1568,10 +1572,10 @@
   (junction (at 166.37 56.515) (diameter 0) (color 0 0 0 0)
     (uuid 98830774-2a74-4473-b7d9-c1c74f44d1bc)
   )
-  (junction (at 56.515 32.385) (diameter 0) (color 0 0 0 0)
+  (junction (at 77.47 33.02) (diameter 0) (color 0 0 0 0)
     (uuid a244cd53-242e-4d06-8d9c-d141567c7f76)
   )
-  (junction (at 46.355 23.495) (diameter 0) (color 0 0 0 0)
+  (junction (at 67.31 24.13) (diameter 0) (color 0 0 0 0)
     (uuid ab81518c-34db-424c-9e98-5031b6aaae74)
   )
   (junction (at 89.535 173.99) (diameter 0) (color 0 0 0 0)
@@ -1586,13 +1590,13 @@
   (junction (at 166.37 68.58) (diameter 0) (color 0 0 0 0)
     (uuid ba3e6b60-394c-413a-b226-04a9c6ba997b)
   )
-  (junction (at 40.005 36.195) (diameter 0) (color 0 0 0 0)
+  (junction (at 60.96 36.83) (diameter 0) (color 0 0 0 0)
     (uuid c8237e65-0d25-4ed6-8267-1393bc0c4bb4)
   )
   (junction (at 210.185 49.53) (diameter 0) (color 0 0 0 0)
     (uuid d2fd4f08-33c9-4be1-98ef-3d4762950d77)
   )
-  (junction (at 51.435 32.385) (diameter 0) (color 0 0 0 0)
+  (junction (at 72.39 33.02) (diameter 0) (color 0 0 0 0)
     (uuid d5067ebf-273c-47f0-90ae-8b49bd1c72ef)
   )
   (junction (at 174.625 49.53) (diameter 0) (color 0 0 0 0)
@@ -1607,25 +1611,25 @@
   (junction (at 224.155 57.15) (diameter 0) (color 0 0 0 0)
     (uuid ef7ade1b-8319-4cfc-9b32-3125b98f6795)
   )
-  (junction (at 40.005 23.495) (diameter 0) (color 0 0 0 0)
+  (junction (at 60.96 24.13) (diameter 0) (color 0 0 0 0)
     (uuid f5d55065-f89f-4dc0-8d45-7b4343eddac2)
   )
   (junction (at 130.175 168.275) (diameter 0) (color 0 0 0 0)
     (uuid fa2e9c92-3c44-48c4-ab2d-7943d6dc4e03)
   )
 
-  (no_connect (at 52.705 99.695) (uuid 36eed3f8-fec1-409e-b49d-08e852244b96))
+  (no_connect (at 73.66 100.33) (uuid 36eed3f8-fec1-409e-b49d-08e852244b96))
   (no_connect (at 254 121.92) (uuid 4117ab26-951c-4169-9861-e9b5dc09f0a9))
   (no_connect (at 254 119.38) (uuid 4117ab26-951c-4169-9861-e9b5dc09f0aa))
-  (no_connect (at 22.225 94.615) (uuid 48b7bcf7-d629-4a64-a7a4-8b5d7dd7a112))
-  (no_connect (at 22.225 89.535) (uuid 48b7bcf7-d629-4a64-a7a4-8b5d7dd7a113))
-  (no_connect (at 22.225 92.075) (uuid 48b7bcf7-d629-4a64-a7a4-8b5d7dd7a114))
-  (no_connect (at 52.705 104.775) (uuid 48b7bcf7-d629-4a64-a7a4-8b5d7dd7a115))
-  (no_connect (at 52.705 107.315) (uuid 48b7bcf7-d629-4a64-a7a4-8b5d7dd7a116))
-  (no_connect (at 52.705 102.235) (uuid 4c70f920-cffc-42cc-8392-e78880534e45))
-  (no_connect (at 52.705 46.355) (uuid aa51617a-fa57-4f1c-b358-22c23b05bd1b))
-  (no_connect (at 22.225 97.155) (uuid fb0d1dc9-9a02-4f99-9196-1c036e1d3176))
-  (no_connect (at 52.705 69.215) (uuid fb0d1dc9-9a02-4f99-9196-1c036e1d317a))
+  (no_connect (at 43.18 95.25) (uuid 48b7bcf7-d629-4a64-a7a4-8b5d7dd7a112))
+  (no_connect (at 43.18 90.17) (uuid 48b7bcf7-d629-4a64-a7a4-8b5d7dd7a113))
+  (no_connect (at 43.18 92.71) (uuid 48b7bcf7-d629-4a64-a7a4-8b5d7dd7a114))
+  (no_connect (at 73.66 105.41) (uuid 48b7bcf7-d629-4a64-a7a4-8b5d7dd7a115))
+  (no_connect (at 73.66 107.95) (uuid 48b7bcf7-d629-4a64-a7a4-8b5d7dd7a116))
+  (no_connect (at 73.66 102.87) (uuid 4c70f920-cffc-42cc-8392-e78880534e45))
+  (no_connect (at 73.66 46.99) (uuid aa51617a-fa57-4f1c-b358-22c23b05bd1b))
+  (no_connect (at 43.18 97.79) (uuid fb0d1dc9-9a02-4f99-9196-1c036e1d3176))
+  (no_connect (at 73.66 69.85) (uuid fb0d1dc9-9a02-4f99-9196-1c036e1d317a))
 
   (wire (pts (xy 130.175 168.275) (xy 130.175 170.815))
     (stroke (width 0) (type default))
@@ -1639,7 +1643,7 @@
     (stroke (width 0) (type default))
     (uuid 05f71cce-f606-47bd-b81d-582f7fc181b0)
   )
-  (wire (pts (xy 46.355 26.035) (xy 46.355 23.495))
+  (wire (pts (xy 67.31 26.67) (xy 67.31 24.13))
     (stroke (width 0) (type default))
     (uuid 060c8fdb-6db5-4aa5-b156-bd840f7b4d88)
   )
@@ -1647,7 +1651,7 @@
     (stroke (width 0) (type default))
     (uuid 0664fa60-5afa-48a3-b9cc-521d289542a0)
   )
-  (wire (pts (xy 52.705 51.435) (xy 65.405 51.435))
+  (wire (pts (xy 73.66 52.07) (xy 86.36 52.07))
     (stroke (width 0) (type default))
     (uuid 06881301-0071-4d4d-97f0-b4ee1b806f51)
   )
@@ -1706,11 +1710,11 @@
     (stroke (width 0) (type default))
     (uuid 1cdeae76-1e43-41e2-9902-3438c2b6e6ea)
   )
-  (wire (pts (xy 51.435 23.495) (xy 51.435 26.035))
+  (wire (pts (xy 72.39 24.13) (xy 72.39 26.67))
     (stroke (width 0) (type default))
     (uuid 1ed28bd6-b3dd-47fe-9ea7-0203fbca7b9d)
   )
-  (wire (pts (xy 52.705 92.075) (xy 55.88 92.075))
+  (wire (pts (xy 73.66 92.71) (xy 76.835 92.71))
     (stroke (width 0) (type default))
     (uuid 1f557057-b2f9-4b7b-ac46-5be01a02f9cb)
   )
@@ -1718,7 +1722,7 @@
     (stroke (width 0) (type default))
     (uuid 1fbb8648-694e-44f2-a08c-a390ef7fca88)
   )
-  (wire (pts (xy 52.705 89.535) (xy 55.88 89.535))
+  (wire (pts (xy 73.66 90.17) (xy 76.835 90.17))
     (stroke (width 0) (type default))
     (uuid 2001b115-7281-4aff-bdbc-85ad0a0a51de)
   )
@@ -1730,11 +1734,11 @@
     (stroke (width 0) (type default))
     (uuid 20a2b3a6-3a52-40d7-ac9b-d7426f4d5b0d)
   )
-  (wire (pts (xy 61.595 32.385) (xy 61.595 31.115))
+  (wire (pts (xy 82.55 33.02) (xy 82.55 31.75))
     (stroke (width 0) (type default))
     (uuid 2103d92d-9253-4a36-b3cd-4cacd1d093a9)
   )
-  (wire (pts (xy 60.96 92.075) (xy 71.755 92.075))
+  (wire (pts (xy 81.915 92.71) (xy 92.71 92.71))
     (stroke (width 0) (type default))
     (uuid 21acfe1f-592f-4423-ada8-8482c5b35396)
   )
@@ -1750,7 +1754,7 @@
     (stroke (width 0) (type default))
     (uuid 2577020a-d3f9-4273-a65e-c772300a4b4f)
   )
-  (wire (pts (xy 20.32 23.495) (xy 40.005 23.495))
+  (wire (pts (xy 41.275 24.13) (xy 60.96 24.13))
     (stroke (width 0) (type default))
     (uuid 2815859d-f367-4cdd-9637-80365abb1a35)
   )
@@ -1758,11 +1762,11 @@
     (stroke (width 0) (type default))
     (uuid 28581253-5ee7-4a3e-a746-695b68e8d91a)
   )
-  (wire (pts (xy 46.355 31.115) (xy 46.355 32.385))
+  (wire (pts (xy 67.31 31.75) (xy 67.31 33.02))
     (stroke (width 0) (type default))
     (uuid 29396511-1d66-4485-a09d-f1fd6148fdcd)
   )
-  (wire (pts (xy 60.96 89.535) (xy 71.755 89.535))
+  (wire (pts (xy 81.915 90.17) (xy 92.71 90.17))
     (stroke (width 0) (type default))
     (uuid 2ae4323d-3c9e-4a08-8400-6b3f9411f9b4)
   )
@@ -1775,7 +1779,7 @@
     (stroke (width 0) (type default))
     (uuid 2d2e6b60-a567-4157-9d34-5b0298e6fa7c)
   )
-  (wire (pts (xy 52.705 59.055) (xy 65.405 59.055))
+  (wire (pts (xy 73.66 59.69) (xy 86.36 59.69))
     (stroke (width 0) (type default))
     (uuid 2d6944f4-d553-4349-b86e-288bfbf6c90c)
   )
@@ -1796,7 +1800,7 @@
     (stroke (width 0) (type default))
     (uuid 312faa9c-7976-4b77-8860-f3fe7d66c4b3)
   )
-  (wire (pts (xy 37.465 38.735) (xy 37.465 36.195))
+  (wire (pts (xy 58.42 39.37) (xy 58.42 36.83))
     (stroke (width 0) (type default))
     (uuid 31f912cc-8814-4032-ab9a-88c932fcaae8)
   )
@@ -1816,7 +1820,7 @@
     (stroke (width 0) (type default))
     (uuid 3b42280a-1e70-472b-ab8f-e97cbb5830a5)
   )
-  (wire (pts (xy 59.055 69.215) (xy 64.135 69.215))
+  (wire (pts (xy 80.01 69.85) (xy 85.09 69.85))
     (stroke (width 0) (type default))
     (uuid 3b6b22a2-e930-4a70-9268-00d3f421a6cc)
   )
@@ -1828,7 +1832,7 @@
     (stroke (width 0) (type default))
     (uuid 40d426a7-e6c7-4076-a0fd-343cca5e2172)
   )
-  (wire (pts (xy 46.355 32.385) (xy 51.435 32.385))
+  (wire (pts (xy 67.31 33.02) (xy 72.39 33.02))
     (stroke (width 0) (type default))
     (uuid 419d12a7-f5c2-491e-87b0-d40720df816a)
   )
@@ -1848,11 +1852,11 @@
     (stroke (width 0) (type default))
     (uuid 47f80ae2-78a6-4108-b5f4-37a5651f3e78)
   )
-  (wire (pts (xy 52.705 61.595) (xy 64.135 61.595))
+  (wire (pts (xy 73.66 62.23) (xy 85.09 62.23))
     (stroke (width 0) (type default))
     (uuid 483ba243-1da6-410b-a6c3-0dbea5db744b)
   )
-  (wire (pts (xy 37.465 114.935) (xy 37.465 116.84))
+  (wire (pts (xy 58.42 115.57) (xy 58.42 117.475))
     (stroke (width 0) (type default))
     (uuid 4b1d89fe-f8bb-480f-ace6-3a32c29527cc)
   )
@@ -1860,7 +1864,7 @@
     (stroke (width 0) (type default))
     (uuid 4c5de5e8-3697-48c1-9ed6-929f2c5bf5ba)
   )
-  (wire (pts (xy 51.435 23.495) (xy 56.515 23.495))
+  (wire (pts (xy 72.39 24.13) (xy 77.47 24.13))
     (stroke (width 0) (type default))
     (uuid 4d86c3a3-2e4f-475a-a1f5-31929097f72b)
   )
@@ -1885,7 +1889,7 @@
     (stroke (width 0) (type default))
     (uuid 512e3774-6e87-425f-b3c5-649fa00be758)
   )
-  (wire (pts (xy 52.705 97.155) (xy 65.405 97.155))
+  (wire (pts (xy 73.66 97.79) (xy 86.36 97.79))
     (stroke (width 0) (type default))
     (uuid 533b04ee-5593-46e1-8870-2d95d5e559b7)
   )
@@ -1925,7 +1929,7 @@
     (stroke (width 0) (type default))
     (uuid 5eff9a3e-0faf-491a-a3a8-8c9082bc80a4)
   )
-  (wire (pts (xy 40.005 22.225) (xy 40.005 23.495))
+  (wire (pts (xy 60.96 22.86) (xy 60.96 24.13))
     (stroke (width 0) (type default))
     (uuid 5f2b56ef-1a1c-489f-9db4-315eeabe2212)
   )
@@ -1942,7 +1946,7 @@
     (stroke (width 0) (type default))
     (uuid 62118ae7-675a-42c4-859f-2e4b4317e932)
   )
-  (wire (pts (xy 37.465 36.195) (xy 40.005 36.195))
+  (wire (pts (xy 58.42 36.83) (xy 60.96 36.83))
     (stroke (width 0) (type default))
     (uuid 637e2a95-ba6a-477c-90d2-e2494cbbdd81)
   )
@@ -1959,7 +1963,7 @@
     (stroke (width 0) (type default))
     (uuid 6b1d7fbf-9103-4e0f-a109-13770dafb88a)
   )
-  (wire (pts (xy 56.515 32.385) (xy 56.515 33.02))
+  (wire (pts (xy 77.47 33.02) (xy 77.47 33.655))
     (stroke (width 0) (type default))
     (uuid 6c1069b4-c076-47b4-83b8-a2cb7f6d1bf4)
   )
@@ -1975,11 +1979,11 @@
     (stroke (width 0) (type default))
     (uuid 700c2a44-9a1c-4218-a712-1a20d0a90c2e)
   )
-  (wire (pts (xy 20.32 23.495) (xy 20.32 46.355))
+  (wire (pts (xy 41.275 24.13) (xy 41.275 46.99))
     (stroke (width 0) (type default))
     (uuid 71f2da2a-ff23-4d42-9ccf-1f72cfc41eb0)
   )
-  (wire (pts (xy 69.215 65.405) (xy 71.12 65.405))
+  (wire (pts (xy 90.17 66.04) (xy 92.075 66.04))
     (stroke (width 0) (type default))
     (uuid 74522ba4-b9bd-4cb8-b5e0-57e762211401)
   )
@@ -1987,11 +1991,11 @@
     (stroke (width 0) (type default))
     (uuid 75226277-8d09-4337-b0df-9c9e6b0fd370)
   )
-  (wire (pts (xy 52.705 84.455) (xy 65.405 84.455))
+  (wire (pts (xy 73.66 85.09) (xy 86.36 85.09))
     (stroke (width 0) (type default))
     (uuid 7650d4ce-ae2f-4b5a-9a54-d9ad508a6c4f)
   )
-  (wire (pts (xy 52.705 74.295) (xy 65.405 74.295))
+  (wire (pts (xy 73.66 74.93) (xy 86.36 74.93))
     (stroke (width 0) (type default))
     (uuid 76cb1eb3-e202-4af6-8216-d6bb673d5272)
   )
@@ -1999,7 +2003,7 @@
     (stroke (width 0) (type default))
     (uuid 779c55de-0c1f-4b6e-ab51-0f425e52c0bf)
   )
-  (wire (pts (xy 52.705 48.895) (xy 65.405 48.895))
+  (wire (pts (xy 73.66 49.53) (xy 86.36 49.53))
     (stroke (width 0) (type default))
     (uuid 78c8f41e-a4ed-4c27-8e1c-20a8b67e98c3)
   )
@@ -2015,7 +2019,7 @@
     (stroke (width 0) (type default))
     (uuid 79bf8bb0-f3eb-4f6f-9119-166f3e87f329)
   )
-  (wire (pts (xy 52.705 76.835) (xy 65.405 76.835))
+  (wire (pts (xy 73.66 77.47) (xy 86.36 77.47))
     (stroke (width 0) (type default))
     (uuid 7be56fc5-f4d7-4cc0-8175-f846fa7d7612)
   )
@@ -2060,11 +2064,11 @@
     (stroke (width 0) (type default))
     (uuid 8217f45a-173e-4f23-8dbe-4b665a9cf867)
   )
-  (wire (pts (xy 71.12 65.405) (xy 71.12 66.675))
+  (wire (pts (xy 92.075 66.04) (xy 92.075 67.31))
     (stroke (width 0) (type default))
     (uuid 82555462-0870-4040-b03b-649b3c00a15a)
   )
-  (wire (pts (xy 52.705 56.515) (xy 65.405 56.515))
+  (wire (pts (xy 73.66 57.15) (xy 86.36 57.15))
     (stroke (width 0) (type default))
     (uuid 8309c265-ba61-4d22-ab68-c694533afc4c)
   )
@@ -2093,11 +2097,11 @@
     (stroke (width 0) (type default))
     (uuid 956f158a-64e5-4776-b870-897f85663c7f)
   )
-  (wire (pts (xy 56.515 32.385) (xy 61.595 32.385))
+  (wire (pts (xy 77.47 33.02) (xy 82.55 33.02))
     (stroke (width 0) (type default))
     (uuid 9680a89a-caf9-4922-9075-f83dd67d04ff)
   )
-  (wire (pts (xy 52.705 64.135) (xy 59.055 64.135))
+  (wire (pts (xy 73.66 64.77) (xy 80.01 64.77))
     (stroke (width 0) (type default))
     (uuid 970f371f-60c1-415e-8341-36a55cbb841a)
   )
@@ -2105,7 +2109,7 @@
     (stroke (width 0) (type default))
     (uuid 99807986-a153-49ea-9389-1a9139d10ae6)
   )
-  (wire (pts (xy 40.005 38.735) (xy 40.005 36.195))
+  (wire (pts (xy 60.96 39.37) (xy 60.96 36.83))
     (stroke (width 0) (type default))
     (uuid 9eb5f863-0ed8-4c2a-943e-2934cbc9cc87)
   )
@@ -2145,11 +2149,11 @@
     (stroke (width 0) (type default))
     (uuid a885d72b-cfe0-4830-bfc1-11004e5ab98e)
   )
-  (wire (pts (xy 52.705 71.755) (xy 65.405 71.755))
+  (wire (pts (xy 73.66 72.39) (xy 86.36 72.39))
     (stroke (width 0) (type default))
     (uuid a8d6c17c-e8e8-4af4-b251-e5bb9ba5449a)
   )
-  (wire (pts (xy 22.225 46.355) (xy 20.32 46.355))
+  (wire (pts (xy 43.18 46.99) (xy 41.275 46.99))
     (stroke (width 0) (type default))
     (uuid a90655cf-0a41-4f94-95d8-64e7ad1b76a9)
   )
@@ -2157,7 +2161,7 @@
     (stroke (width 0) (type default))
     (uuid a92cb3dc-a35c-4039-93a8-fc57d3ffe7a4)
   )
-  (wire (pts (xy 56.515 23.495) (xy 56.515 26.035))
+  (wire (pts (xy 77.47 24.13) (xy 77.47 26.67))
     (stroke (width 0) (type default))
     (uuid a9d83769-4d78-4207-9158-9906e1987928)
   )
@@ -2165,7 +2169,7 @@
     (stroke (width 0) (type default))
     (uuid ac0b6196-ffd1-49e6-8a34-174002f91d30)
   )
-  (wire (pts (xy 51.435 32.385) (xy 56.515 32.385))
+  (wire (pts (xy 72.39 33.02) (xy 77.47 33.02))
     (stroke (width 0) (type default))
     (uuid ac6e64df-ac58-4e07-a47e-1b53756d6682)
   )
@@ -2182,7 +2186,7 @@
     (uuid b168f172-3e11-44a5-8ea5-3fab33b12252)
   )
 
-  (wire (pts (xy 52.705 94.615) (xy 65.405 94.615))
+  (wire (pts (xy 73.66 95.25) (xy 86.36 95.25))
     (stroke (width 0) (type default))
     (uuid b1925272-8a2f-4395-a457-81d9148c2bfd)
   )
@@ -2194,7 +2198,7 @@
     (stroke (width 0) (type default))
     (uuid b764db17-3e60-46b6-8409-ca2e702a15b0)
   )
-  (wire (pts (xy 56.515 31.115) (xy 56.515 32.385))
+  (wire (pts (xy 77.47 31.75) (xy 77.47 33.02))
     (stroke (width 0) (type default))
     (uuid b8ccc5f9-8ca1-410b-904e-e2b48f7f21ea)
   )
@@ -2223,11 +2227,11 @@
     (stroke (width 0) (type default))
     (uuid bdf3ceed-381b-4c5a-b2ee-f7ce10122c97)
   )
-  (wire (pts (xy 46.355 23.495) (xy 51.435 23.495))
+  (wire (pts (xy 67.31 24.13) (xy 72.39 24.13))
     (stroke (width 0) (type default))
     (uuid bec4f467-fcef-4d2a-864a-5133910ae1f0)
   )
-  (wire (pts (xy 51.435 31.115) (xy 51.435 32.385))
+  (wire (pts (xy 72.39 31.75) (xy 72.39 33.02))
     (stroke (width 0) (type default))
     (uuid bed923be-bee6-4297-a008-820346082f34)
   )
@@ -2264,11 +2268,11 @@
     (stroke (width 0) (type default))
     (uuid c92af61c-fb2d-4d11-aa1f-60f84023344e)
   )
-  (wire (pts (xy 52.705 53.975) (xy 65.405 53.975))
+  (wire (pts (xy 73.66 54.61) (xy 86.36 54.61))
     (stroke (width 0) (type default))
     (uuid cc2caf34-6efa-43df-b174-309458820239)
   )
-  (wire (pts (xy 59.055 64.135) (xy 59.055 69.215))
+  (wire (pts (xy 80.01 64.77) (xy 80.01 69.85))
     (stroke (width 0) (type default))
     (uuid cd9d4a86-a82c-4637-87cb-167853ac04ec)
   )
@@ -2280,7 +2284,7 @@
     (stroke (width 0) (type default))
     (uuid d04117df-91c9-4530-9ed5-e3d3524ceaa2)
   )
-  (wire (pts (xy 52.705 81.915) (xy 65.405 81.915))
+  (wire (pts (xy 73.66 82.55) (xy 86.36 82.55))
     (stroke (width 0) (type default))
     (uuid d17ee14b-a38e-4144-9813-54b6174d9bc0)
   )
@@ -2329,7 +2333,7 @@
     (stroke (width 0) (type default))
     (uuid e035a302-9af3-4ac1-b74b-283d5f9fe137)
   )
-  (wire (pts (xy 40.005 36.195) (xy 40.005 23.495))
+  (wire (pts (xy 60.96 36.83) (xy 60.96 24.13))
     (stroke (width 0) (type default))
     (uuid e659be12-beed-4b6b-a51c-b8968626a784)
   )
@@ -2341,7 +2345,7 @@
     (stroke (width 0) (type default))
     (uuid edbc0069-79fe-44d2-aa04-d620dad8040b)
   )
-  (wire (pts (xy 52.705 79.375) (xy 65.405 79.375))
+  (wire (pts (xy 73.66 80.01) (xy 86.36 80.01))
     (stroke (width 0) (type default))
     (uuid ee0192ec-d6e8-4d6d-9237-4eda6d77a296)
   )
@@ -2353,7 +2357,7 @@
     (stroke (width 0) (type default))
     (uuid ef32c03f-b59d-4209-8d75-5b8779376adf)
   )
-  (wire (pts (xy 56.515 23.495) (xy 61.595 23.495))
+  (wire (pts (xy 77.47 24.13) (xy 82.55 24.13))
     (stroke (width 0) (type default))
     (uuid f395b006-b306-47ae-a03c-04e4ad135fe2)
   )
@@ -2365,7 +2369,7 @@
     (stroke (width 0) (type default))
     (uuid f730a74d-8427-44dc-ba6b-07f80f2d7172)
   )
-  (wire (pts (xy 61.595 23.495) (xy 61.595 26.035))
+  (wire (pts (xy 82.55 24.13) (xy 82.55 26.67))
     (stroke (width 0) (type default))
     (uuid f88a4017-d618-433a-985c-e662ea7d6caf)
   )
@@ -2381,7 +2385,7 @@
     (stroke (width 0) (type default))
     (uuid fb3b2c7d-471d-44e4-880a-20c73787eb45)
   )
-  (wire (pts (xy 40.005 23.495) (xy 46.355 23.495))
+  (wire (pts (xy 60.96 24.13) (xy 67.31 24.13))
     (stroke (width 0) (type default))
     (uuid fd9be03d-88be-4cd6-a240-e83a3fe05d17)
   )
@@ -2442,7 +2446,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1f564e5f-f59d-433f-ba48-a28baf400149)
   )
-  (label "SPI_MOSI" (at 57.15 53.975 0) (fields_autoplaced)
+  (label "SPI_MOSI" (at 78.105 54.61 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 246c3141-9b2f-4a36-9905-dda9b0bf36f3)
   )
@@ -2450,7 +2454,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 267b9313-0494-41d7-9bd9-fc8bc27bd66c)
   )
-  (label "~{SDN}" (at 61.595 48.895 0) (fields_autoplaced)
+  (label "~{SDN}" (at 82.55 49.53 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 291ea7f8-60d9-4669-8e12-0545415a4f0d)
   )
@@ -2462,19 +2466,19 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 31f80b69-216a-4cc0-99b7-52b4f174b9e3)
   )
-  (label "LED_TX" (at 59.055 76.835 0) (fields_autoplaced)
+  (label "LED_TX" (at 80.01 77.47 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 367b502e-4778-48f6-a988-cb86d072da76)
   )
-  (label "~{TRIG}" (at 61.595 97.155 0) (fields_autoplaced)
+  (label "~{TRIG}" (at 82.55 97.79 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 41474473-e0b9-496e-94b5-75fbca4fbca4)
   )
-  (label "SPI_MISO" (at 57.15 56.515 0) (fields_autoplaced)
+  (label "SPI_MISO" (at 78.105 57.15 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4261d81b-56ea-45a2-baa1-c1565eac774b)
   )
-  (label "LED_RX" (at 59.055 74.295 0) (fields_autoplaced)
+  (label "LED_RX" (at 80.01 74.93 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 44a9ce34-f940-442d-affe-149a4cd319ca)
   )
@@ -2506,11 +2510,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 650f352b-7be3-4307-8c63-96046af5763b)
   )
-  (label "SCL" (at 62.23 81.915 0) (fields_autoplaced)
+  (label "SCL" (at 83.185 82.55 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6a8ab38b-e21f-4317-b18a-1540508d3bcf)
   )
-  (label "SPI_SCK" (at 57.785 59.055 0) (fields_autoplaced)
+  (label "SPI_SCK" (at 78.74 59.69 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6fefee88-fbde-415c-b083-ea9e6c686192)
   )
@@ -2522,11 +2526,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 72d76465-0702-4271-b3c8-4172585b7515)
   )
-  (label "UART_RX" (at 63.5 89.535 0) (fields_autoplaced)
+  (label "UART_RX" (at 84.455 90.17 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7c510ac4-edc4-4128-a2b4-79dea80c0a6f)
   )
-  (label "~{SPI_CS}" (at 59.055 51.435 0) (fields_autoplaced)
+  (label "~{SPI_CS}" (at 80.01 52.07 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 80fad257-6a01-4d67-8532-a28103860d2e)
   )
@@ -2534,15 +2538,15 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8e7cd137-0bf3-476e-adc6-1dee48e236be)
   )
-  (label "SDA" (at 62.23 79.375 0) (fields_autoplaced)
+  (label "SDA" (at 83.185 80.01 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a4ae1370-bf66-4bb8-8e76-1aac185e5d87)
   )
-  (label "~{RST}" (at 62.23 84.455 0) (fields_autoplaced)
+  (label "~{RST}" (at 83.185 85.09 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a4bf1092-7c11-4cf0-8f5d-ce31e8c4f83e)
   )
-  (label "UART_TX" (at 63.5 92.075 0) (fields_autoplaced)
+  (label "UART_TX" (at 84.455 92.71 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b4426b00-6355-4f1b-9688-42de1f7164b7)
   )
@@ -2558,7 +2562,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c3b5132b-355a-42c1-8fa9-3ae62c04fa7b)
   )
-  (label "~{INT}" (at 62.865 71.755 0) (fields_autoplaced)
+  (label "~{INT}" (at 83.82 72.39 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ce34c9c5-2ce8-4121-ac59-a60719c531c5)
   )
@@ -2574,7 +2578,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e38e6c6e-cde6-4eb7-bd47-83e4aaeb3ec2)
   )
-  (label "~{IRQ}" (at 61.595 94.615 0) (fields_autoplaced)
+  (label "~{IRQ}" (at 82.55 95.25 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e539ae00-5cb5-4c69-81fe-ff7182122662)
   )
@@ -2605,17 +2609,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SPI_SCK" (shape output) (at 65.405 59.055 0) (fields_autoplaced)
+  (global_label "SPI_SCK" (shape output) (at 86.36 59.69 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 0679d5ba-604e-4f9b-9562-fcb6947e4920)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 76.1122 59.055 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 97.0672 59.69 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "LED_RX" (shape output) (at 65.405 74.295 0) (fields_autoplaced)
+  (global_label "LED_RX" (shape output) (at 86.36 74.93 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 125f093f-f19d-48ac-84c1-dca7f8e1de43)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 75.205 74.295 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 96.16 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2626,10 +2630,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "LED_TX" (shape output) (at 65.405 76.835 0) (fields_autoplaced)
+  (global_label "LED_TX" (shape output) (at 86.36 77.47 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 188fa87e-18b1-4e7b-a3bb-05ae4ff1abac)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 74.9026 76.835 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 95.8576 77.47 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2675,10 +2679,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SDA" (shape input) (at 65.405 79.375 0) (fields_autoplaced)
+  (global_label "SDA" (shape input) (at 86.36 80.01 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 636a443a-b225-41b8-9ca6-6c87f65cfd29)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 71.8789 79.375 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 92.8339 80.01 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2696,31 +2700,31 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SCL" (shape bidirectional) (at 65.405 81.915 0) (fields_autoplaced)
+  (global_label "SCL" (shape bidirectional) (at 86.36 82.55 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 8746edd6-dc1d-43ff-82af-a4d8f1175a3d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 72.9297 81.915 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 93.8847 82.55 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "~{INT}" (shape input) (at 65.405 71.755 0) (fields_autoplaced)
+  (global_label "~{INT}" (shape input) (at 86.36 72.39 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 975b3f54-2cb9-4f0c-9ff7-664bbfdae5ff)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 71.2137 71.755 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 92.1687 72.39 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "UART_RX" (shape input) (at 71.755 89.535 0) (fields_autoplaced)
+  (global_label "UART_RX" (shape input) (at 92.71 90.17 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid aa3481ac-e69c-4771-b18f-8c891fa83819)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 82.7646 89.535 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 103.7196 90.17 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "~{RST}" (shape input) (at 65.405 84.455 0) (fields_autoplaced)
+  (global_label "~{RST}" (shape input) (at 86.36 85.09 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid aae01438-5d3d-452c-a917-ded03ff3893b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 71.7579 84.455 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 92.7129 85.09 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2731,10 +2735,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "~{TRIG}" (shape input) (at 65.405 97.155 0) (fields_autoplaced)
+  (global_label "~{TRIG}" (shape input) (at 86.36 97.79 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid b6491998-8b24-4e8f-a29e-740c287df485)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 72.4232 97.155 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 93.3782 97.79 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2759,45 +2763,45 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SPI_MOSI" (shape output) (at 65.405 53.975 0) (fields_autoplaced)
+  (global_label "SPI_MOSI" (shape output) (at 86.36 54.61 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid d3164e58-2e87-4d37-b72a-5fb924e08e0f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 76.9589 53.975 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 97.9139 54.61 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "~{SPI_CS}" (shape output) (at 65.405 51.435 0) (fields_autoplaced)
+  (global_label "~{SPI_CS}" (shape output) (at 86.36 52.07 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid de3fe2b1-2cc8-469b-a6e9-3b995bf59cf6)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 74.8422 51.435 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 95.7972 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "UART_TX" (shape output) (at 71.755 92.075 0) (fields_autoplaced)
+  (global_label "UART_TX" (shape output) (at 92.71 92.71 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid e05c87e5-eac3-4324-8ef8-ced5f748cb90)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 82.4622 92.075 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 103.4172 92.71 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "~{IRQ}" (shape input) (at 65.405 94.615 0) (fields_autoplaced)
+  (global_label "~{IRQ}" (shape input) (at 86.36 95.25 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid ec4e45ad-0b38-4718-8825-0ee2e699c070)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 71.5161 94.615 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 92.4711 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SPI_MISO" (shape input) (at 65.405 56.515 0) (fields_autoplaced)
+  (global_label "SPI_MISO" (shape input) (at 86.36 57.15 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid f2a6cfe1-302d-407e-b4bf-d278410c433a)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 76.9589 56.515 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 97.9139 57.15 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "~{SDN}" (shape output) (at 65.405 48.895 0) (fields_autoplaced)
+  (global_label "~{SDN}" (shape output) (at 86.36 49.53 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid f4a58f69-ee18-43e1-a915-2e4aade2e6bd)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 72.1208 48.895 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 93.0758 49.53 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2809,27 +2813,84 @@
     )
   )
 
-  (symbol (lib_id "Device:C_Small") (at 56.515 28.575 0) (unit 1)
+  (symbol (lib_id "Device:C_Small") (at 77.47 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0940ec14-777c-4385-a363-05bd08c649d7)
-    (property "Reference" "C1" (at 53.975 26.67 0)
+    (property "Reference" "C1" (at 74.93 27.305 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100n" (at 51.435 30.48 0)
+    (property "Value" "100n" (at 72.39 31.115 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 56.515 28.575 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 77.47 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 56.515 28.575 0)
+    (property "Datasheet" "~" (at 77.47 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 55fb7047-ec4a-478b-91ba-1c96dcf2ff9c))
     (pin "2" (uuid 985f9924-9600-4972-b3e2-9a6cb7230c8d))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "C1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "MCU_Microchip_ATmega:ATmega328PB-M") (at 58.42 77.47 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 0cde3b5a-c648-47f2-95e8-0115d12e2595)
+    (property "Reference" "U2" (at 60.3759 114.935 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "ATmega328PB-M" (at 60.3759 117.475 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" (at 58.42 77.47 0)
+      (effects (font (size 1.27 1.27) italic) hide)
+    )
+    (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" (at 58.42 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 19ccf813-a515-4545-adbd-a095ad980c17))
+    (pin "10" (uuid 14327314-2b09-4498-b455-a285a12e7c60))
+    (pin "11" (uuid 3f9dff07-17d4-49cc-85c2-1d3e7175031b))
+    (pin "12" (uuid 19e149e7-da16-4b06-be5b-97c109616eec))
+    (pin "13" (uuid b7f9f431-4820-4065-97c6-1cacd38e5852))
+    (pin "14" (uuid 3c7e0d9f-1056-4162-8b9f-fc31520f52ca))
+    (pin "15" (uuid 742faea1-1de5-4d20-a11e-8fba552e7412))
+    (pin "16" (uuid c8bd9571-4127-47f9-bb03-1de075e6c537))
+    (pin "17" (uuid f993cc5d-642b-4eb1-b41a-2ffc99f23c5d))
+    (pin "18" (uuid d8574caa-be3e-45e4-9394-e17a4d3293d4))
+    (pin "19" (uuid 13548773-0cd7-4823-9e65-679fcd06ecb5))
+    (pin "2" (uuid c7c54335-39b9-42b3-8917-acd57c430161))
+    (pin "20" (uuid 2ba2bf99-9acf-4fc7-8cb4-49539796cb7f))
+    (pin "21" (uuid 0dc10001-5988-4d90-9241-dc70e781b5d1))
+    (pin "22" (uuid 7a978ef5-bec1-4a27-a8fd-3bcfe757905a))
+    (pin "23" (uuid 0bec3db8-9668-40c6-8c8f-2d8ffb0a74ce))
+    (pin "24" (uuid 5ac5c974-5981-4ccb-97ab-4b382ddedca6))
+    (pin "25" (uuid f3d144ff-8cb5-436a-af70-24c587bd681e))
+    (pin "26" (uuid 755fb96a-ca27-4b9c-9fc1-b4bcf48547f8))
+    (pin "27" (uuid b9c9797b-a7e2-4670-8af2-fc81d16e7b1b))
+    (pin "28" (uuid 146ef34b-0f4b-420d-95ba-876a37fd5972))
+    (pin "29" (uuid 0bfca840-9c49-483c-97da-109e1068a3ae))
+    (pin "3" (uuid 8418117f-4431-4111-ad47-f685c3c25bcc))
+    (pin "30" (uuid e35e053a-e731-4181-a46c-a25c45bdfc45))
+    (pin "31" (uuid de07caa7-cf4e-4475-97fc-2d95f4a5cb88))
+    (pin "32" (uuid ca3395ea-938b-4df4-ace7-771869614fd5))
+    (pin "33" (uuid a8782e09-4086-4d15-9996-f646cab19502))
+    (pin "4" (uuid aca0e679-c3b0-4027-9f2c-8dd27e4f490a))
+    (pin "5" (uuid c85d48a1-5011-4f0e-9381-9e28b405e331))
+    (pin "6" (uuid a207537c-9ce5-4820-b390-6c043771c6fc))
+    (pin "7" (uuid 1a037a11-339e-475b-b547-704b0f0617b3))
+    (pin "8" (uuid 4166f263-2769-4ea5-a5b8-e32dcea91eb6))
+    (pin "9" (uuid ef5d73f8-60e5-49fe-bbaa-4f998d79d10d))
+    (instances
+      (project "strato_connect"
+        (path "/68f0b00a-2670-49ca-965e-75306e80d123"
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -2853,7 +2914,7 @@
     (pin "1" (uuid 76098612-bd4d-46ea-a966-748f23d11913))
     (pin "2" (uuid 214b60e8-eb52-4989-8b62-055df458cbe6))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "R11") (unit 1)
         )
@@ -2879,7 +2940,7 @@
     (pin "1" (uuid 02b6667d-0123-4fc5-84d3-06b656f800c0))
     (pin "2" (uuid 7c7a21b5-90b3-47a2-9c6e-f9ac356058ca))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "SW1") (unit 1)
         )
@@ -2904,7 +2965,7 @@
     )
     (pin "1" (uuid 62afb98a-add8-40b0-85c5-3ab15cbff64b))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR09") (unit 1)
         )
@@ -2930,7 +2991,7 @@
     (pin "1" (uuid 6b583319-30ec-4c88-ab3e-3a458ca64b5f))
     (pin "2" (uuid 5eff20d5-cd99-45b7-8628-34868647cab7))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "R6") (unit 1)
         )
@@ -2956,7 +3017,7 @@
     (pin "1" (uuid 01d348ab-7795-477c-92a4-e79c29690967))
     (pin "2" (uuid c444809e-5fcc-42e5-90dd-009400c80d0c))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "R5") (unit 1)
         )
@@ -2964,25 +3025,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Small_US") (at 58.42 92.075 90) (unit 1)
+  (symbol (lib_id "Device:R_Small_US") (at 79.375 92.71 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2c5a6b75-651a-4f8f-aace-9c1f5bfccf14)
-    (property "Reference" "R2" (at 56.515 93.98 90)
+    (property "Reference" "R2" (at 77.47 94.615 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1k" (at 59.69 93.98 90)
+    (property "Value" "1k" (at 80.645 94.615 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 58.42 92.075 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 79.375 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 58.42 92.075 0)
+    (property "Datasheet" "~" (at 79.375 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 004448a0-43d1-4166-9be5-ea48ec5ab845))
     (pin "2" (uuid e1126c13-6229-4227-88db-45da734ab609))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "R2") (unit 1)
         )
@@ -3008,7 +3069,7 @@
     (pin "1" (uuid 81118238-719e-421a-b1a0-37512fc60b9d))
     (pin "2" (uuid 97bba0b5-abb9-431b-b6e0-a76e370bbe43))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "R8") (unit 1)
         )
@@ -3016,26 +3077,26 @@
     )
   )
 
-  (symbol (lib_id "Device:Resonator") (at 64.135 65.405 90) (unit 1)
+  (symbol (lib_id "Device:Resonator") (at 85.09 66.04 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 325e0de3-190a-4e12-9c8e-cac7e8ed9534)
-    (property "Reference" "Y1" (at 61.595 64.135 90)
+    (property "Reference" "Y1" (at 82.55 64.77 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "CSTNE16M0V530000R0" (at 91.44 64.135 90)
+    (property "Value" "CSTNE16M0V530000R0" (at 112.395 64.77 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Crystal:Resonator_SMD_Murata_CSTxExxV-3Pin_3.0x1.1mm" (at 64.135 66.04 0)
+    (property "Footprint" "Crystal:Resonator_SMD_Murata_CSTxExxV-3Pin_3.0x1.1mm" (at 85.09 66.675 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 64.135 66.04 0)
+    (property "Datasheet" "~" (at 85.09 66.675 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid dd887f7c-09b4-45a1-abdb-c8e03620fe5d))
     (pin "2" (uuid 97eb0236-8104-454c-bbe2-1df60860afbd))
     (pin "3" (uuid 4637c509-7db5-4415-8ab7-d21b36bab59b))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "Y1") (unit 1)
         )
@@ -3043,25 +3104,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Small_US") (at 58.42 89.535 90) (unit 1)
+  (symbol (lib_id "Device:R_Small_US") (at 79.375 90.17 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 33eab18d-2836-41b6-ab07-e545ec5d0de3)
-    (property "Reference" "R1" (at 56.515 86.995 90)
+    (property "Reference" "R1" (at 77.47 87.63 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1k" (at 59.69 86.995 90)
+    (property "Value" "1k" (at 80.645 87.63 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 58.42 89.535 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 79.375 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 58.42 89.535 0)
+    (property "Datasheet" "~" (at 79.375 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 06f3cb13-9db7-4d35-8566-efbbbb4ab22d))
     (pin "2" (uuid d50c6722-0712-47ba-8d11-d9fd7762b426))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "R1") (unit 1)
         )
@@ -3086,65 +3147,9 @@
     )
     (pin "1" (uuid 91b75bef-0825-4c18-963b-ad3ecfb5d3eb))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR016") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MCU_Microchip_ATmega:ATmega328PB-A") (at 37.465 76.835 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 43273240-34d2-4bab-882f-6b859818b508)
-    (property "Reference" "U2" (at 24.765 40.005 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "ATmega328PB-A" (at 38.1 113.665 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Package_QFP:TQFP-32_7x7mm_P0.8mm" (at 37.465 76.835 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" (at 37.465 76.835 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a02f8f8f-6636-4665-8b42-1c652b4b9eb8))
-    (pin "10" (uuid f3a1cd34-50a4-4898-9be5-d0be335dea3c))
-    (pin "11" (uuid 7de1028c-0551-4bfc-a834-209eebe27351))
-    (pin "12" (uuid bc4e94ea-8ae1-4271-9eaf-09ed1280ae0b))
-    (pin "13" (uuid 5305c5dd-187f-4d72-85ff-119c64b344f2))
-    (pin "14" (uuid 75f48abe-d779-4f17-aafd-ebf50ab7266a))
-    (pin "15" (uuid cc8521ac-57ae-4592-8ec2-385680d2e371))
-    (pin "16" (uuid c00426bb-7760-4d34-869f-992c8b48239e))
-    (pin "17" (uuid cbd1359a-cfb5-4bb4-867a-e5644012415f))
-    (pin "18" (uuid 7dd2a175-a4d4-4964-b408-2bdff95b5fbe))
-    (pin "19" (uuid f9f3e101-368a-44a9-a107-efce18aed622))
-    (pin "2" (uuid ff96c323-0bb8-47ed-a204-bff0a8e17e45))
-    (pin "20" (uuid feadc54a-fbda-4c9b-9c55-91176041678a))
-    (pin "21" (uuid 5cbf8b90-a294-4b75-bb72-c2a42bc2fa84))
-    (pin "22" (uuid 28ce819d-bdc8-4cd0-abe5-6433acbdab7c))
-    (pin "23" (uuid 8ac190fa-8621-46ae-8ee4-da7c260624a5))
-    (pin "24" (uuid a4351e68-38af-468d-8448-4a6f21557d1a))
-    (pin "25" (uuid b37ee53f-6b74-4f2f-bfa7-d9165c45a8eb))
-    (pin "26" (uuid d4b08a4f-11f0-462a-bacc-4d828adb06fb))
-    (pin "27" (uuid 805bf251-52b0-4959-a967-30bc00fcb9ff))
-    (pin "28" (uuid 253d2109-dcd4-47a0-b9b4-5bcba8ea72d4))
-    (pin "29" (uuid 03bf9875-5ea2-401f-8193-19f4c00640f3))
-    (pin "3" (uuid 8775287a-78e8-4fea-9b56-11a4b59efde7))
-    (pin "30" (uuid 7b27837c-ea6e-432f-bb1e-a6e859355cae))
-    (pin "31" (uuid 0f30a5dd-b874-44ad-9ad0-e5cd5754277c))
-    (pin "32" (uuid 0dae8f17-2228-4870-8bab-7bae5e25f73c))
-    (pin "4" (uuid 35833151-95ad-4ced-8a5a-082c82eaf20b))
-    (pin "5" (uuid 2319a307-ff45-4eae-9479-1c5e5036f0eb))
-    (pin "6" (uuid 51219f7c-ad45-4a04-87b0-ef5c1161c02d))
-    (pin "7" (uuid 664bb9af-b91e-4fb5-b392-c842e9b54aed))
-    (pin "8" (uuid 73b5e099-be29-44ad-844b-13d42838c893))
-    (pin "9" (uuid 46a8e632-4364-4dfb-80ed-e1e858096b05))
-    (instances
-      (project "stratoconnect"
-        (path "/68f0b00a-2670-49ca-965e-75306e80d123"
-          (reference "U2") (unit 1)
         )
       )
     )
@@ -3167,7 +3172,7 @@
     )
     (pin "1" (uuid 9d7a3902-2d5d-4a75-a077-e8be858c7181))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "H3") (unit 1)
         )
@@ -3193,7 +3198,7 @@
     (pin "1" (uuid b6a0eb3a-b993-4418-9d24-80459a31527c))
     (pin "2" (uuid f9306ad8-2c1c-4440-9476-127406c39989))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "R3") (unit 1)
         )
@@ -3219,7 +3224,7 @@
     (pin "1" (uuid 96a88649-aa40-4b4a-bda8-ef768fe2985e))
     (pin "2" (uuid a986d563-b356-481b-a5d3-a83951e1985a))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "R10") (unit 1)
         )
@@ -3244,7 +3249,7 @@
     )
     (pin "1" (uuid 3cb634f3-eb03-489e-b9ba-4b57cf6540dc))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR011") (unit 1)
         )
@@ -3270,7 +3275,7 @@
     (pin "1" (uuid d7d02ed9-3c4a-4218-b9e9-af89af4ae23b))
     (pin "2" (uuid a784bdce-3631-44eb-b58e-da6521725029))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "R4") (unit 1)
         )
@@ -3295,7 +3300,7 @@
     )
     (pin "1" (uuid 865b8ce0-37d5-4fe4-919d-1df511380894))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR017") (unit 1)
         )
@@ -3320,7 +3325,7 @@
     )
     (pin "1" (uuid 7a1468eb-95b8-450a-add7-9c4d8ba0ff5b))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR022") (unit 1)
         )
@@ -3345,7 +3350,7 @@
     )
     (pin "1" (uuid bbbb1467-1900-4ad3-a4f8-ce11e15c1313))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR024") (unit 1)
         )
@@ -3353,25 +3358,25 @@
     )
   )
 
-  (symbol (lib_id "Device:C_Small") (at 46.355 28.575 0) (unit 1)
+  (symbol (lib_id "Device:C_Small") (at 67.31 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5e31e8e1-17a2-48f3-8212-073eecd95a4f)
-    (property "Reference" "C10" (at 42.545 26.67 0)
+    (property "Reference" "C10" (at 63.5 27.305 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1u" (at 43.815 30.48 0)
+    (property "Value" "1u" (at 64.77 31.115 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 46.355 28.575 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 67.31 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 46.355 28.575 0)
+    (property "Datasheet" "~" (at 67.31 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid dffc71e3-6c06-4aa4-854d-63d6a7dacb90))
     (pin "2" (uuid 738f9768-2b53-49cd-b4ba-542bf35a90c5))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "C10") (unit 1)
         )
@@ -3396,7 +3401,7 @@
     )
     (pin "1" (uuid 80431766-729c-4bcd-b75f-0970d9a87108))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR018") (unit 1)
         )
@@ -3421,7 +3426,7 @@
     )
     (pin "1" (uuid d0eaca9e-de04-4f97-a75c-037f3a8128f6))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR025") (unit 1)
         )
@@ -3446,7 +3451,7 @@
     )
     (pin "1" (uuid 255b7842-1117-4d58-8b71-becc1177f1e0))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR06") (unit 1)
         )
@@ -3471,7 +3476,7 @@
     )
     (pin "1" (uuid 70755f59-6367-465e-b43d-d1ec20e68a10))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR07") (unit 1)
         )
@@ -3496,7 +3501,7 @@
     )
     (pin "1" (uuid 4970fdf8-bd14-469c-b778-d56f441413f1))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR01") (unit 1)
         )
@@ -3522,7 +3527,7 @@
     (pin "1" (uuid 87c3b085-00da-488d-914f-aee93a67a41a))
     (pin "2" (uuid c180a7b6-44a5-47c0-ad45-e7fea2407788))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "D2") (unit 1)
         )
@@ -3547,7 +3552,7 @@
     )
     (pin "1" (uuid 1a965563-2862-41a8-9c72-e32f411a161d))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "H1") (unit 1)
         )
@@ -3573,7 +3578,7 @@
     (pin "1" (uuid 28650857-fe23-4356-a5d4-c154344c2dd3))
     (pin "2" (uuid 6bce6ded-fcba-4131-a423-367fd8e53e47))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "D3") (unit 1)
         )
@@ -3598,7 +3603,7 @@
     )
     (pin "1" (uuid 2b78cddc-6853-452d-a98a-82113012ac5a))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR010") (unit 1)
         )
@@ -3623,7 +3628,7 @@
     )
     (pin "1" (uuid 7ca6718b-cebf-4b31-bf73-a15111f82416))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR019") (unit 1)
         )
@@ -3649,7 +3654,7 @@
     (pin "1" (uuid ae8b75d7-2167-4042-93a1-8552f1aa6e31))
     (pin "2" (uuid c0407ae9-bfaf-48cf-ae03-9a632c3a3b09))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "R9") (unit 1)
         )
@@ -3689,7 +3694,7 @@
     (pin "8" (uuid 5b1054d5-e833-46e8-ae6a-69a90c0a0551))
     (pin "9" (uuid c1ba49d4-bfd8-49be-ab80-09300540482b))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "U4") (unit 1)
         )
@@ -3715,7 +3720,7 @@
     (pin "1" (uuid faa4c415-b4eb-4f5a-92b9-478802b23ff3))
     (pin "2" (uuid c8df0ac6-803d-44aa-9762-174413235e76))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "C8") (unit 1)
         )
@@ -3741,7 +3746,7 @@
     (pin "1" (uuid 9773dc45-544f-413c-a2a8-d229808fd6f6))
     (pin "2" (uuid 012b3b4b-9301-4326-b6cc-fad62f638d3b))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "C5") (unit 1)
         )
@@ -3766,7 +3771,7 @@
     )
     (pin "1" (uuid 18de1c8a-52f7-4efb-8fd6-874483541d32))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR03") (unit 1)
         )
@@ -3791,7 +3796,7 @@
     )
     (pin "1" (uuid f7d24c8c-dc13-4324-9563-9af0cd23ae60))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR04") (unit 1)
         )
@@ -3808,7 +3813,7 @@
     (property "Value" "33p" (at 225.425 55.88 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:CP_Elec_5x5.3" (at 225.1202 57.15 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 225.1202 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 224.155 53.34 0)
@@ -3817,7 +3822,7 @@
     (pin "1" (uuid f3df8a1e-154d-495b-a932-9b45f55483ca))
     (pin "2" (uuid 622d7d34-db05-4bd8-8ac5-a76824fc0042))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "C11") (unit 1)
         )
@@ -3843,7 +3848,7 @@
     (pin "1" (uuid 8f62f65b-364f-45e5-a38e-a01d4cf6dd43))
     (pin "2" (uuid 0044ef81-331f-40e9-a0cd-921c4db6ebcb))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "C6") (unit 1)
         )
@@ -3869,7 +3874,7 @@
     (pin "1" (uuid 804002cd-fcee-4675-9ec3-6ba415ce8592))
     (pin "2" (uuid 33548b9e-76a4-4375-b499-fc39d88ca270))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "D1") (unit 1)
         )
@@ -3886,7 +3891,7 @@
     (property "Value" "Conn_01x02_Pin" (at 151.765 97.79 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" (at 153.67 100.33 0)
+    (property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" (at 153.67 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 100.33 0)
@@ -3895,7 +3900,7 @@
     (pin "1" (uuid f44e507d-77c0-4ec4-ad9f-8a12976f16a3))
     (pin "2" (uuid c4a67077-b1e3-48c7-b153-621f0a33ce6a))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "J4") (unit 1)
         )
@@ -3921,7 +3926,7 @@
     (pin "1" (uuid 38cbb5ef-62f8-4008-b30a-ea8fbebe6848))
     (pin "2" (uuid f749b0d1-7f33-4ecd-b15e-7aab349fc216))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "C7") (unit 1)
         )
@@ -3938,7 +3943,7 @@
     (property "Value" "Conn_02x03_Odd_Even" (at 158.75 151.13 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" (at 163.195 146.05 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" (at 163.195 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 163.195 146.05 0)
@@ -3951,7 +3956,7 @@
     (pin "5" (uuid 016b17b0-80ee-4c67-bb19-cc6224444bb5))
     (pin "6" (uuid f1b53934-a1b8-4a33-9a16-15df5499c693))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "J2") (unit 1)
         )
@@ -3968,7 +3973,7 @@
     (property "Value" "Conn_01x05_Pin" (at 172.72 99.06 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 172.085 106.045 0)
+    (property "Footprint" "Connector_JST:JST_SH_SM05B-SRSS-TB_1x05-1MP_P1.00mm_Horizontal" (at 172.085 106.045 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.085 106.045 0)
@@ -3980,7 +3985,7 @@
     (pin "4" (uuid 74f3595d-e975-4f84-8f2f-2ac95653001f))
     (pin "5" (uuid 3c0e87fb-ef45-4e86-83ef-4ad8137d589f))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "J5") (unit 1)
         )
@@ -4005,7 +4010,7 @@
     )
     (pin "1" (uuid 0f491793-f706-44ed-b5c3-916ee3142328))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR026") (unit 1)
         )
@@ -4030,7 +4035,7 @@
     )
     (pin "1" (uuid ea732b57-b291-4b66-8979-e7cbee1b310f))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR02") (unit 1)
         )
@@ -4056,7 +4061,7 @@
     (pin "1" (uuid 84fee224-ff85-447b-bff2-3cab72435a5b))
     (pin "2" (uuid 8cca46c8-1a08-4d6a-a28d-a7f65fc86f2a))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "SW2") (unit 1)
         )
@@ -4064,24 +4069,24 @@
     )
   )
 
-  (symbol (lib_name "+5V_1") (lib_id "power:+5V") (at 40.005 22.225 0) (unit 1)
+  (symbol (lib_name "+5V_1") (lib_id "power:+5V") (at 60.96 22.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cf9005ab-3a8c-4381-879b-6994270712a4)
-    (property "Reference" "#PWR014" (at 40.005 26.035 0)
+    (property "Reference" "#PWR014" (at 60.96 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 40.005 17.145 0)
+    (property "Value" "+5V" (at 60.96 17.78 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 40.005 22.225 0)
+    (property "Footprint" "" (at 60.96 22.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 40.005 22.225 0)
+    (property "Datasheet" "" (at 60.96 22.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 31e81a26-ca49-4385-a89b-9f2b13d48a28))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR014") (unit 1)
         )
@@ -4098,7 +4103,7 @@
     (property "Value" "Conn_01x04_Pin" (at 174.625 132.715 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 171.45 126.365 0)
+    (property "Footprint" "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" (at 171.45 126.365 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 171.45 126.365 0)
@@ -4109,7 +4114,7 @@
     (pin "3" (uuid b0fe7025-bf08-4254-a7c1-472d514796f3))
     (pin "4" (uuid b1a85956-7d8c-4117-857d-d00669718a97))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "J3") (unit 1)
         )
@@ -4135,7 +4140,7 @@
     (pin "1" (uuid 6fc31f32-5929-4a80-a007-6df2a98e0b69))
     (pin "2" (uuid 29eb40f7-1b33-45fe-a57f-cfdeb0dd383e))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "J1") (unit 1)
         )
@@ -4165,7 +4170,7 @@
     (pin "5" (uuid f1bc76db-7909-4f74-ab2d-4ad5277a0ae1))
     (pin "6" (uuid ff964aa9-74d7-4296-857c-94cefe3a3c41))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "U1") (unit 1)
         )
@@ -4191,7 +4196,7 @@
     (pin "1" (uuid 461c2669-891f-4132-a875-a9172573eb85))
     (pin "2" (uuid 4f799cfd-4e01-461b-9227-0a7998f74fc9))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "L1") (unit 1)
         )
@@ -4199,24 +4204,24 @@
     )
   )
 
-  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 37.465 116.84 0) (unit 1)
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 58.42 117.475 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e02e7f65-aed2-479c-9e89-bc70639f996b)
-    (property "Reference" "#PWR013" (at 37.465 123.19 0)
+    (property "Reference" "#PWR013" (at 58.42 123.825 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 37.465 121.285 0)
+    (property "Value" "GND" (at 58.42 121.92 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 37.465 116.84 0)
+    (property "Footprint" "" (at 58.42 117.475 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 37.465 116.84 0)
+    (property "Datasheet" "" (at 58.42 117.475 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0920c62f-a3bb-4fd4-a45a-b0ea9bd49635))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR013") (unit 1)
         )
@@ -4233,7 +4238,7 @@
     (property "Value" "100n" (at 202.565 50.8 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:CP_Elec_5x5.3" (at 200.66 54.9402 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 200.66 54.9402 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 204.47 53.975 0)
@@ -4242,7 +4247,7 @@
     (pin "1" (uuid 4ca4f149-224d-43dc-b1be-97cff0bf4c4f))
     (pin "2" (uuid 605cc073-0fbd-40fc-832b-7024d8ffa7d6))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "C9") (unit 1)
         )
@@ -4250,25 +4255,25 @@
     )
   )
 
-  (symbol (lib_id "Device:C_Small") (at 61.595 28.575 0) (unit 1)
+  (symbol (lib_id "Device:C_Small") (at 82.55 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e24acdd0-47de-40f4-b929-a56172641c12)
-    (property "Reference" "C4" (at 59.055 26.67 0)
+    (property "Reference" "C4" (at 80.01 27.305 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100n" (at 56.515 30.48 0)
+    (property "Value" "100n" (at 77.47 31.115 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 61.595 28.575 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 82.55 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 61.595 28.575 0)
+    (property "Datasheet" "~" (at 82.55 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 76d77431-3348-4b54-97ee-1ed697fb1fdf))
     (pin "2" (uuid 24c1fb53-ce51-41ec-a8cb-583e7d36bc52))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "C4") (unit 1)
         )
@@ -4293,7 +4298,7 @@
     )
     (pin "1" (uuid 7e23f3fc-9a16-483c-bbc9-456c50e84559))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "H2") (unit 1)
         )
@@ -4319,7 +4324,7 @@
     (pin "1" (uuid ea332970-24e2-41ff-ad3b-d495e71904b7))
     (pin "2" (uuid 9e966687-8913-4f1b-81e2-4b670fda10ca))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "JP2") (unit 1)
         )
@@ -4327,25 +4332,25 @@
     )
   )
 
-  (symbol (lib_id "Device:C_Small") (at 51.435 28.575 0) (unit 1)
+  (symbol (lib_id "Device:C_Small") (at 72.39 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ea3c4cbd-f69d-4055-b7ae-1b29dffcc7a4)
-    (property "Reference" "C2" (at 48.895 26.67 0)
+    (property "Reference" "C2" (at 69.85 27.305 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1u" (at 48.895 30.48 0)
+    (property "Value" "1u" (at 69.85 31.115 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 51.435 28.575 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 72.39 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 51.435 28.575 0)
+    (property "Datasheet" "~" (at 72.39 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid a7e64fe5-b1d0-428d-9bd7-6f61fec8db1c))
     (pin "2" (uuid eab0f61a-7d39-4707-a940-acc78498a2ee))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "C2") (unit 1)
         )
@@ -4371,7 +4376,7 @@
     (pin "1" (uuid 18eefc60-dba7-4a1c-b7b5-84735f5ec88b))
     (pin "2" (uuid 92b28461-5526-4c24-866b-ea092acdcc74))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "D4") (unit 1)
         )
@@ -4397,7 +4402,7 @@
     (pin "1" (uuid b42b1411-6daa-44a5-bbe1-464131177929))
     (pin "2" (uuid 143774a4-e15e-41cd-98a4-47de484d1fe7))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "R7") (unit 1)
         )
@@ -4422,7 +4427,7 @@
     )
     (pin "1" (uuid d3d96352-3c4d-4167-b073-0b8cc93b2544))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR015") (unit 1)
         )
@@ -4447,7 +4452,7 @@
     )
     (pin "1" (uuid dbb4b5ca-77b8-402b-8a60-a179706fd325))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR027") (unit 1)
         )
@@ -4455,24 +4460,24 @@
     )
   )
 
-  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 56.515 33.02 0) (unit 1)
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 77.47 33.655 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f8d7e7c9-8eef-42f7-a8be-4520b4a0c579)
-    (property "Reference" "#PWR012" (at 56.515 39.37 0)
+    (property "Reference" "#PWR012" (at 77.47 40.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 60.325 34.925 0)
+    (property "Value" "GND" (at 81.28 35.56 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 56.515 33.02 0)
+    (property "Footprint" "" (at 77.47 33.655 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 56.515 33.02 0)
+    (property "Datasheet" "" (at 77.47 33.655 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 49361519-8a99-4040-998a-eda32d7b2b0e))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR012") (unit 1)
         )
@@ -4498,7 +4503,7 @@
     (pin "1" (uuid 173e4241-62f2-4240-b2a6-e0aa1aa3428e))
     (pin "2" (uuid 217dc35e-4ffd-439d-b548-9e8625d64ca7))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "C3") (unit 1)
         )
@@ -4523,7 +4528,7 @@
     )
     (pin "1" (uuid bf9b9a3b-c882-48d2-a7ca-dbb264b2880a))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR05") (unit 1)
         )
@@ -4548,7 +4553,7 @@
     )
     (pin "1" (uuid ade8ac29-a46f-4900-b4f5-3d2454aa4bfa))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR021") (unit 1)
         )
@@ -4573,7 +4578,7 @@
     )
     (pin "1" (uuid 58e16650-e7c6-46be-8d09-f669aa119b45))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR08") (unit 1)
         )
@@ -4581,24 +4586,24 @@
     )
   )
 
-  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 71.12 66.675 0) (unit 1)
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 92.075 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ffb8396e-90da-4b33-a917-781f2e064192)
-    (property "Reference" "#PWR020" (at 71.12 73.025 0)
+    (property "Reference" "#PWR020" (at 92.075 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 74.93 66.675 0)
+    (property "Value" "GND" (at 95.885 67.31 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 71.12 66.675 0)
+    (property "Footprint" "" (at 92.075 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 71.12 66.675 0)
+    (property "Datasheet" "" (at 92.075 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7232a912-9f9e-4b95-895d-662c49ee43a6))
     (instances
-      (project "stratoconnect"
+      (project "strato_connect"
         (path "/68f0b00a-2670-49ca-965e-75306e80d123"
           (reference "#PWR020") (unit 1)
         )
