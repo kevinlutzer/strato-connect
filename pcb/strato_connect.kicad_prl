@@ -5,7 +5,7 @@
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
@@ -64,11 +64,11 @@
       35,
       36
     ],
-    "visible_layers": "fffffff_ffffffff",
+    "visible_layers": "fffffff_fffffff9",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "stratoconnect.kicad_prl",
+    "filename": "strato_connect.kicad_prl",
     "version": 3
   },
   "project": {
