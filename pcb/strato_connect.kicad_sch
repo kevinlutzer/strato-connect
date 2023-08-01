@@ -3793,7 +3793,7 @@
     (property "Reference" "C7" (at 243.84 53.975 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "47u" (at 243.84 59.055 0)
+    (property "Value" "100u" (at 243.84 59.055 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:CP_Elec_5x5.3" (at 243.5352 60.325 0)

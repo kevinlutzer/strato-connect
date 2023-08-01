@@ -1,0 +1,7 @@
+pcb/strato_connect-backups/
+**/bin/**
+.vscode
+*.DS_Store
+fab/.DS_Store
+*{sketch_path}
+programmer/programmer-backups/*

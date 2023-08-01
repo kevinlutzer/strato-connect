@@ -331,7 +331,7 @@
     (property "ki_description" "Unpolarized capacitor")
     (property "ki_keywords" "cap capacitor")
     (path "/e0aa69a7-b26b-4fbd-a82a-2af826bc50c9")
-    (attr smd)
+    (attr smd exclude_from_bom)
     (fp_text reference "C9" (at 0 -1.16 90) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9aef5b35-8b88-4714-a242-1cfb579d4b99)
@@ -1311,7 +1311,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c3530f89-cec6-4ce5-9baf-76fe64f82a65)
     )
-    (fp_text value "47u" (at 0 3.7) (layer "F.Fab") hide
+    (fp_text value "100u" (at 0 3.7) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 68fe8287-2391-4c3e-910a-fd2a5ef1884a)
     )
@@ -1845,16 +1845,16 @@
     (property "ki_description" "Resistor, small US symbol")
     (property "ki_keywords" "r resistor")
     (path "/cc805e15-d7ff-4c01-8ba5-8051fcb15f66")
-    (attr smd)
-    (fp_text reference "R12" (at 0 -1.17 -90) (layer "F.SilkS") hide
+    (attr smd exclude_from_bom)
+    (fp_text reference "R12" (at 0 -1.17 90) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3328e470-aa9d-4330-b6c2-e4731c0da273)
     )
-    (fp_text value "NP" (at 0 1.17 -90) (layer "F.Fab") hide
+    (fp_text value "NP" (at 0 1.17 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 595b8b1d-0b9e-4899-8099-ec856a9bde86)
     )
-    (fp_text user "${REFERENCE}" (at 0 0 -90) (layer "F.Fab")
+    (fp_text user "${REFERENCE}" (at 0 0 90) (layer "F.Fab")
         (effects (font (size 0.26 0.26) (thickness 0.04)))
       (tstamp 1922e4a5-3b62-4808-ab1a-084cf087e971)
     )
