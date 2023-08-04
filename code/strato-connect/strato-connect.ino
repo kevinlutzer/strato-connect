@@ -1,5 +1,5 @@
-#include <RF4463.h>
-#include "AX25/AX25.h"
+#include "RF4463.h"
+#include "AX25.h"
 #include <SPI.h>
 #include <Wire.h>
 
@@ -28,7 +28,9 @@ void setup() {
     Serial.println("Failed to set power to max!");
 
   uint8_t *s;
-  int s_len = ax25.buildIFrame(s, "N0CALL", "N0CALL", "Hello World!");
+  s = calloc()
+  ax25.applyCallsign(s, "N0CALL");
+  // int s_len = ax25.buildIFrame(s, "N0CALL", "N0CALL", "Hello World!");
 
   Serial.printf("s_len: %d", s_len);
 }
