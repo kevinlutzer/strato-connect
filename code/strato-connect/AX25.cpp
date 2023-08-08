@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stdio.h>
-#include <string>
-#include <iostream>
+#include <string.h>
+// #include <iostream>
 
 void AX25::applyCallsign(uint8_t *frame, uint16_t index, char *callsign, uint8_t ssid) {
   // short circuit if nullptr 
