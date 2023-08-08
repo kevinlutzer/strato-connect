@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <iostream>
-#include "AX25.h"
+#include "../ax25/ax25.h"
 
 namespace {
   // Tests the default c'tor.

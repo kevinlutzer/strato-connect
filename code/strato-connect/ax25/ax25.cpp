@@ -1,4 +1,4 @@
-#include "AX25.h"
+#include "ax25.h"
 
 #include <stdint.h>
 #include <stdlib.h>

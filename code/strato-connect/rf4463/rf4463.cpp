@@ -1,4 +1,4 @@
-#include "RF4463.h"
+#include "rf4463.h"
 #include <SPI.h>
 // Generated with wireless development suite by silicon labs
 #include "radio_config_Si4463.h"
