@@ -1,4 +1,4 @@
-#include "rf4463.h"
+#include "rf4463.hpp"
 #include <SPI.h>
 // Generated with wireless development suite by silicon labs
 #include "radio_config_Si4463.h"
@@ -46,11 +46,9 @@ bool RF4463::init()
 
 
   	// check if RF4463 works
-	if(!checkDevice())
-	{
+	if(!checkDevice()){
 		return false;
 	}
-
 
 	// Set RF parameter,like frequency,data rate etc
 	setConfig(RF4463_CONFIGURATION_DATA,sizeof(RF4463_CONFIGURATION_DATA));

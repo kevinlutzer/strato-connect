@@ -26,13 +26,6 @@ void setup() {
 
   if(!rf4463.setTxPower(127))
     Serial.println("Failed to set power to max!");
-
-  // uint8_t *s;
-  // s = calloc()
-  // ax25.applyCallsign(s, "N0CALL");
-  // int s_len = ax25.buildIFrame(s, "N0CALL", "N0CALL", "Hello World!");
-
-  // Serial.print/f("s_len: %d", s_len);
 }
 
 void loop() {

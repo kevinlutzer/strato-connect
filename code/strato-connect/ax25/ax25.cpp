@@ -1,4 +1,4 @@
-#include "ax25.h"
+#include "ax25.hpp"
 
 #include <stdint.h>
 #include <stdlib.h>
@@ -66,6 +66,31 @@ uint16_t AX25::crcCcittUpdate(uint16_t crc, uint8_t data)
 }
 
 uint16_t AX25::encode(uint8_t* frame, const char* dcallsign, const char* data) {
+  // short circuit if there is data, no point in encoding a frame with no data.
+  // if (data) {
+  //   return 0;
+  // }
+
+  // short circuit if the data length is zero
+  uint16_t data_len = strlen(*data);
+  // if(data_len == 0) {
+  //   return 0;
+  // }
+
+  // grab substring if the data_len is greater then the max length a frame will allow for.
+  if (data_len > AX25_MAX_LEN) {
+    data_len = AX25_MAX_LEN;
+  }
+
+  uint16_t frame_len = data_len + (uint16_t)(AX25_FCS_LEN + AX25_PID_LEN + AX25_CONTROL_LEN + AX25_ADDRESS_LEN + 2 * AX25_FLAG_LEN);
+
+  // allocate frame to just contain the callsign
+  frame = (uint8_t*)calloc(frame_len, sizeof(uint8_t));
+
+  printf("frame_len: %d\n", frame_len);
+  printf("callsign: %d\n", *dcallsign);
+  printf("frame: %s\n", data);
+
   return 0;
 }
 

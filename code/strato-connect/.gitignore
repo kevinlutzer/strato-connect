@@ -1,8 +1,0 @@
-
-# vscode
-*.vscode/**
-
-# bin 
-*a.out
-*.h.gch
-*.hex
