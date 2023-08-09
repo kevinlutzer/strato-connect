@@ -65,33 +65,46 @@ uint16_t AX25::crcCcittUpdate(uint16_t crc, uint8_t data)
   return ((((uint16_t)data << 8) | (crc >> 8)) ^ (uint8_t)(data >> 4) ^ ((uint16_t)data << 3));
 }
 
-uint16_t AX25::encode(uint8_t* frame, const char* dcallsign, const char* data) {
+uint16_t AX25::encode(uint8_t* frame, char* dcallsign, char* data) {
   // short circuit if there is data, no point in encoding a frame with no data.
-  // if (data) {
+  // if (data == NULL) {
   //   return 0;
   // }
 
   // short circuit if the data length is zero
-  uint16_t data_len = strlen(*data);
+  uint16_t data_len = strlen(data);
   // if(data_len == 0) {
   //   return 0;
   // }
 
   // grab substring if the data_len is greater then the max length a frame will allow for.
-  if (data_len > AX25_MAX_LEN) {
-    data_len = AX25_MAX_LEN;
-  }
+  // if (data_len > AX25_MAX_LEN) {
+  //   data_len = AX25_MAX_LEN;
+  // }
 
   uint16_t frame_len = data_len + (uint16_t)(AX25_FCS_LEN + AX25_PID_LEN + AX25_CONTROL_LEN + AX25_ADDRESS_LEN + 2 * AX25_FLAG_LEN);
 
   // allocate frame to just contain the callsign
   frame = (uint8_t*)calloc(frame_len, sizeof(uint8_t));
+  for(uint16_t i = 0; i < frame_len; i++) {
+    frame[i] = 0;
+  }
+  // if (frame == NULL) {
+  //     return 0; // Exit with an error code
+  // }
 
-  printf("frame_len: %d\n", frame_len);
-  printf("callsign: %d\n", *dcallsign);
-  printf("frame: %s\n", data);
+  // add frame flags
+  // frame[0] = AX25_FLAG;
+  // frame[frame_len - 1] = AX25_FLAG;
 
-  return 0;
+  // add the callsigns
+  // applyCallsign(frame, 1, dcallsign, 0);
+  // applyCallsign(frame, 1 + AX25_CALLSIGN_LEN, this->scallsign, 0);
+
+  // frame[14] = AX25_CONTROL_APRS;
+  // frame[15] = AX25_PID;
+
+  return frame_len;
 }
 
 // int AX25::buildIFrame(uint8_t* s, const char* scallsign, const char* dcallsign, const char* data)
