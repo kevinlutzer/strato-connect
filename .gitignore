@@ -12,3 +12,4 @@ pcb/strato_connect-backups/
 *.h.gch
 *a.out
 bin/
+*.hpp.gch
