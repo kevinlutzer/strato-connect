@@ -6,12 +6,9 @@ namespace {
   // Tests the default c'tor.
   TEST(AX25, applyCallsign) {
     AX25 ax25;
-    
-    // allocate frame to just contain the callsign
-    uint8_t *frame = (uint8_t*)calloc(14, sizeof(uint8_t));
-    if (frame == NULL) {
-      FAIL();
-    }
+
+
+    uint8_t frame[14]; 
 
     // Apply regular callsign with 6 alpha numerica characters with an ssid of 0
     char *callsign = "V3WA52"; // random callsign
@@ -48,9 +45,6 @@ namespace {
       std::bitset<sizeof(frame2[i]) * 8> binary(frame2[i]);
       std::cout << binary << std::endl;
     }
-
-    // std::bitset<sizeof(frame) * 8> binary(frame);
-    // printf("frame: %b\n", frame);
 
     // Length is the length of the header + the length of  "HELLO WORLD"
     EXPECT_EQ(frame_len, 31);

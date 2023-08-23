@@ -1,10 +1,14 @@
+# Editor
+.vscode/
+.DS_Store
+
+# Kicad
+programmer/programmer-backups/
 pcb/strato_connect-backups/
-**/bin/**
-.vscode
-*.DS_Store
-*a.out
+
+# Arduino, C++, C 
+\{sketch_path\}
+{sketch_path}
 *.h.gch
-fab/.DS_Store
-*{sketch_path}
-programmer/programmer-backups/*
-*{sketch_path}
+*a.out
+bin/
