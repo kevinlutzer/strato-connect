@@ -37,6 +37,6 @@ class AX25
     uint16_t crcCcittUpdate(uint16_t crc, uint8_t data);
 
   public:
-    void applyCallsign(uint8_t* s, char* callsign);
-    uint16_t encode(uint8_t* frame, char *scallsign, char *dcallsign, char* data, ...);
+    uint8_t* applyCallsign(uint8_t* s, char* callsign);
+    uint16_t encode(uint8_t** buf, char *scallsign, char *dcallsign, char* data, ...);
 };
