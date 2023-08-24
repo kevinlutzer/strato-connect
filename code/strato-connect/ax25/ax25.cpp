@@ -5,8 +5,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
-#include <iostream>
-using namespace std;
 
 uint16_t AX25::crcCcittUpdate(uint16_t crc, uint8_t data) {
   return 0;

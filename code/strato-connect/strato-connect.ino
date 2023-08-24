@@ -8,6 +8,9 @@
 #define SEL 10
 #define SCL 19
 
+#define LED_RX 16
+#define LED_TX 17
+
 AX25 ax25 = AX25();
 RF4463 rf4463 = RF4463(IRQ, SDN, SEL);
 unsigned char tx_buf[]={"NEW HELLO WORLD!!!"};
@@ -18,6 +21,12 @@ unsigned char rx_buf[20];
 
 void setup() {
   Serial.begin(9600);
+
+  pinMode(LED_RX, OUTPUT);
+  pinMode(LED_X, OUTPUT);
+
+  digitalWrite(LED_RX, HIGH);
+  digitalWrite(LED_TX, HIGH);
 
   if(!rf4463.init())
     Serial.println("Init fail!");
