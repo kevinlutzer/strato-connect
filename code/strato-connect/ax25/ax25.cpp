@@ -127,12 +127,12 @@ uint16_t AX25::encode2(uint8_t* s, char* scallsign, char* dcallsign, char* data,
     va_end(va);
 
     // /* Calculate and append the checksum */
-    // for (x = 0xFFFF, s = frame; *s; s++) {
-    //     x = crcCcittUpdate(x, *s);
-    // }
+    for (x = 0xFFFF, s = frame; *s; s++) {
+        x = crcCcittUpdate(x, *s);
+    }
 
-    // *(s++) = ~(x & 0xFF);
-    // *(s++) = ~((x >> 8) & 0xFF);
+    *(s++) = ~(x & 0xFF);
+    *(s++) = ~((x >> 8) & 0xFF);
 
     return 65;
 }

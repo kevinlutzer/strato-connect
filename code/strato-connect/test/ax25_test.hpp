@@ -2,6 +2,8 @@
 #include <iostream>
 #include "../ax25/ax25.hpp"
 
+using namespace std;
+
 namespace {
   // Tests the default c'tor.
   // TEST(AX25, applyCallsign) {
@@ -71,8 +73,9 @@ namespace {
     frame2_len = ax25.encode(frame2, dcallsign, scallsign, "HELLO WORLD");
 
     for (int i = 0; i < frame1_len; i++) {
-      std::bitset<sizeof(frame1[i]) * 8> binary1(frame1[i]);
-      std::bitset<sizeof(frame2[i]) * 8> binary2(frame2[i]);
+      bitset<sizeof(frame1[i]) * 8> binary1(frame1[i]);
+      bitset<sizeof(frame2[i]) * 8> binary2(frame2[i]);
+      
       std::cout << "Index: " << i << " " << binary1 << " " << binary2 << std::endl;
     }
 

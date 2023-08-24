@@ -1,5 +1,5 @@
-#include "rf4463.h"
-#include "ax25.h"
+#include "rf4463.hpp"
+#include "ax25.hpp"
 #include <SPI.h>
 #include <Wire.h>
 
