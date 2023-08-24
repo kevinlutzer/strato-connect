@@ -11,4 +11,4 @@ A RF module you can comunicate with over I2C to send AX.25 formatted data over (
 # Code
 
 To compile and run tests use: `g++ test/test.cpp ax25/ax25.* test/ax25_test.h -lgtest -std=c++17 && ./a.out`
-To compile code for arduino use: `arduino-cli compile -b MiniCore:avr:328 --library=ax25,rf4463`
+To compile code for arduino use: `arduino-cli compile -b MiniCore:avr:328 --library=./rf4463,./ax25 --output-dir=bin`

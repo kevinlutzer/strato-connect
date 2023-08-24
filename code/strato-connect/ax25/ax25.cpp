@@ -50,33 +50,35 @@ uint16_t AX25::encode(uint8_t* frame, char *scallsign, char *dcallsign, char* da
   }
 
   // grab substring if the data_len is greater then the max length a frame will allow for.
-  if (data_len > AX25_MAX_LEN) {
-    data_len = AX25_MAX_LEN;
-  }
+  // if (data_len > AX25_MAX_LEN) {
+  //   data_len = AX25_MAX_LEN;
+  // }
 
   uint16_t frame_len = data_len + (uint16_t)(AX25_FCS_LEN + AX25_PID_LEN + AX25_CONTROL_LEN + AX25_ADDRESS_LEN + 2 * AX25_FLAG_LEN);
 
   // allocate frame to just contain the callsign
-  frame = (uint8_t*)calloc(frame_len, sizeof(uint8_t));
-  for(uint16_t i = 0; i < frame_len; i++) {
-    frame[i] = 0;
-  }
+  // frame = (uint8_t *)malloc(frame_len * sizeof(uint8_t));
+  frame = (uint8_t *)calloc(frame_len, sizeof(uint8_t));
 
-  // add frame flags
-  frame[0] = AX25_FLAG;
-  frame[frame_len - 1] = AX25_FLAG;
+  // for(uint16_t i = 0; i < frame_len; i++) {
+  //   frame[i] = 0;
+  // }
 
-  // add the callsigns
-  applyCallsign(frame, 1, dcallsign, 0);
-  applyCallsign(frame, 1 + AX25_CALLSIGN_LEN, scallsign, 0);
+  // // add frame flags
+  // frame[0] = AX25_FLAG;
+  // frame[frame_len - 1] = AX25_FLAG;
 
-  frame[14] = AX25_CONTROL_APRS;
-  frame[15] = AX25_PID;
+  // // add the callsigns
+  // applyCallsign(frame, 1, dcallsign, 0);
+  // applyCallsign(frame, 1 + AX25_CALLSIGN_LEN, scallsign, 0);
+
+  // frame[14] = AX25_CONTROL_APRS;
+  // frame[15] = AX25_PID;
 
   return frame_len;
 }
 
-uint8_t* AX25::_apply_callsign(uint8_t* s, char* callsign) {
+uint8_t* AX25::applyCallsign(uint8_t* s, char* callsign) {
   char ssid;
   char i;
 
@@ -105,7 +107,7 @@ uint8_t* AX25::_apply_callsign(uint8_t* s, char* callsign) {
   return (s);
 }
 
-uint16_t AX25::encode2(uint8_t* s, char* scallsign, char* dcallsign, char* data, ...) {
+uint16_t AX25::encode(uint8_t* s, char* scallsign, char* dcallsign, char* data, ...) {
     uint16_t x;
     va_list va;
     uint8_t frame[64 + 1];
@@ -120,7 +122,7 @@ uint16_t AX25::encode2(uint8_t* s, char* scallsign, char* dcallsign, char* data,
 
     *(s++) = 0x03; /* Control, 0x03 = APRS-UI frame */
     *(s++) = 0xF0; /* Protocol ID: 0xF0 = no layer 3 data */
-
+  
     /* The maximum message length is AX25_MAX_LEN - callsigns - CRC */
     /* 1 is added to allow room for vsnprintf's \0 at the end */
     vsnprintf((char*)s, 64 - (s - frame) - 2 + 1, data, va);

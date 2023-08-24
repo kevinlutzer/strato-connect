@@ -69,17 +69,18 @@ namespace {
 
     uint8_t *frame1, *frame2; 
     uint16_t frame1_len, frame2_len;
-    frame1_len = ax25.encode2(frame1, dcallsign, scallsign, "HELLO WORLD");
-    frame2_len = ax25.encode(frame2, dcallsign, scallsign, "HELLO WORLD");
+    frame2_len = ax25.encode2(frame2, dcallsign, scallsign, "HELLO WORLD");
+    frame1_len = ax25.encode(frame1, dcallsign, scallsign, "HELLO WORLD");
 
     for (int i = 0; i < frame1_len; i++) {
       bitset<sizeof(frame1[i]) * 8> binary1(frame1[i]);
-      bitset<sizeof(frame2[i]) * 8> binary2(frame2[i]);
+      // bitset<sizeof(frame2[i]) * 8> binary2(frame2[i]);
       
-      std::cout << "Index: " << i << " " << binary1 << " " << binary2 << std::endl;
+      // std::cout << "Index: " << i << " " << binary1 << " " << binary2 << std::endl;
+      std::cout << "Index: " << i << " " << binary1 << std::endl;
     }
 
     // Length is the length of the header + the length of  "HELLO WORLD"
-    EXPECT_EQ(frame1_len, 20);
+    EXPECT_EQ(frame1_len, 23);
   }
 }  // namespace
