@@ -16,7 +16,7 @@ void I2CController::onReceive(uint8_t *buf, int len) {
 void I2CController::ping() {
     uint8_t buf[1];
     buf[0] = 0x01;
-    this->writeFunc(buf, sizeof(buf));
+    this->writeFunc(buf, 1);
 }
 
 
