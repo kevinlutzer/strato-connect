@@ -8,6 +8,9 @@
 
 #include <stdint.h>
 
+#ifndef AX25_HPP
+#define AX25_HPP
+
 //
 // Part Lengths (Bits)
 // 
@@ -40,3 +43,5 @@ class AX25
     uint8_t* applyCallsign(uint8_t* s, char* callsign);
     uint16_t encode(uint8_t** buf, char *scallsign, char *dcallsign, char* data, ...);
 };
+
+#endif

@@ -1,7 +1,7 @@
 // This library suit for RF4463PRO and RF4463F30 in FIFO mode
 
-#ifndef RF4463_H
-#define RF4463_H
+#ifndef RF4463_HPP
+#define RF4463_HPP
 
 #include "Arduino.h"
 
