@@ -1,7 +1,6 @@
 #ifndef I2CCONTROLLER_HPP
 #define I2CCONTROLLER_HPP
 
-// #include <rf4463.hpp>
 #include <ax25.hpp>
 #include <Wire.h>
 
@@ -27,7 +26,7 @@ class I2CController {
         AX25 *ax25;
         TwoWire *wire;
 
-        void ping();
+        void writeByte(uint8_t data);
 };
 
 #endif
