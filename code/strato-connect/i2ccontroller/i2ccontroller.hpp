@@ -22,12 +22,11 @@ class I2CController {
     public:
         I2CController(AX25 *ax25, TwoWire *wire);
         void onReceive(uint8_t *buf, int len);
+        void writeByte(uint8_t data);
 
     private:
         AX25 *ax25;
         TwoWire *wire;
-
-        void ping();
 };
 
 #endif
