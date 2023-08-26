@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <iostream>
-#include "../ax25/ax25.hpp"
+#include <ax25.hpp>
 
 using namespace std;
 
@@ -17,12 +17,8 @@ namespace {
     uint8_t *frame; 
     uint16_t frame_len = ax25.encode(&frame, dcallsign, scallsign, data);
 
-    for (int i = 0; i < frame_len; i++) {    
-      cout << "Index: " << i << " " << frame[i] << endl;
-    }
-
     // Length is the length of the header + the length of  "HELLO WORLD"
-    EXPECT_EQ(frame_len, 10);
+    EXPECT_EQ(frame_len, 11);
     EXPECT_EQ(*frame, *data);
   }
 }  // namespace

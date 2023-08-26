@@ -15,7 +15,7 @@
 
 AX25 ax25 = AX25();
 RF4463 rf4463 = RF4463(IRQ, SDN, SEL);
-I2CController i2ccontroller = I2CController(&ax25, &rf4463);
+I2CController i2ccontroller = I2CController(&ax25, &rf4463, &Wire);
 unsigned char tx_buf[]={"NEW HELLO WORLD!!!"};
 unsigned char val;
 unsigned char flag=0;    //  flag of rx mode
