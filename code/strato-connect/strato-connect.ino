@@ -1,8 +1,9 @@
-// #include "rf4463.hpp"
-// #include "ax25.hpp"
+#include <rf4463.hpp>
+#include <ax25.hpp>
 // #include "i2ccontroller.hpp"
 #include <SPI.h>
 #include <Wire.h>
+
 
 #define IRQ 2
 #define SDN 9
@@ -21,8 +22,18 @@
 // unsigned char flag=0;    //  flag of rx mode
 // unsigned char rx_len;
 // unsigned char rx_buf[20];
+
 void setup() {
-  return;
+  Serial.begin(9600);
+  pinMode(LED_RX, OUTPUT);
+  pinMode(LED_TX, OUTPUT);
+
+  while(true) {
+    Serial.println("Hello World");
+    digitalWrite(LED_RX, HIGH);
+    digitalWrite(LED_RX, HIGH);
+    digitalWrite(INT, LOW);
+  }
 }
 
 void loop() {
@@ -32,14 +43,14 @@ void loop() {
 // void setup() {
 //   Serial.begin(9600);
 
-//   pinMode(LED_RX, OUTPUT);
-//   pinMode(LED_TX, OUTPUT);
+  // pinMode(LED_RX, OUTPUT);
+  // pinMode(LED_TX, OUTPUT);
 
-//   while(true) {
-//     digitalWrite(LED_RX, HIGH);
-//     digitalWrite(LED_RX, HIGH);
-//     digitalWrite(INT, LOW);
-//   }
+  // while(true) {
+  //   digitalWrite(LED_RX, HIGH);
+  //   digitalWrite(LED_RX, HIGH);
+  //   digitalWrite(INT, LOW);
+  // }
 
 //   while(true) {
 //     // Serial.println("Waiting for serial...");

@@ -1,9 +1,8 @@
 #include "rf4463.hpp"
 #include <SPI.h>
+
 // Generated with wireless development suite by silicon labs
 #include "radio_config_Si4463.h"
-
-// #define DEBUG_RF4463
 
 // Configuration parameters from "radio_config_Si4463.h"
 const uint8_t RF4463_CONFIGURATION_DATA[] = RADIO_CONFIGURATION_DATA_ARRAY;
