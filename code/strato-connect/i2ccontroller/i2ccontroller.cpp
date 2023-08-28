@@ -1,6 +1,5 @@
 #include "i2ccontroller.hpp"
 #include <Wire.h>
-#include <iostream>
 
 using namespace std;
 
@@ -14,8 +13,6 @@ void I2CController::onReceive(uint8_t *buf, int len) {
         return;
     }
 
-    cout << "onReceive: " << (int)buf[0] << endl;
-
     switch (buf[0]) {
         case CMD_PING:
             this->twoWire->write(VAL_PONG);
@@ -24,7 +21,7 @@ void I2CController::onReceive(uint8_t *buf, int len) {
             this->twoWire->write(VAL_VERSION);
             return;
         case CMD_SET_PROPERTY:
-            cout << "Set Property" << endl;
+            // cout << "Set Property" << endl;
             this->setProperty(buf, len);
         case CMD_GET_PROPERTY:
             if (len < 1) {
@@ -39,7 +36,6 @@ void I2CController::onReceive(uint8_t *buf, int len) {
 void I2CController::setCallsign(uint8_t *buf, int len) {
     // callsign is a minimum of 1 byte
 
-    cout << "Set Callsign" << endl;
     char scallsign[len - 1];
     for (uint8_t i = 2; i < len; i++) {
         scallsign[i] = buf[i];
@@ -47,8 +43,6 @@ void I2CController::setCallsign(uint8_t *buf, int len) {
 
     this->sourceCallsign = scallsign;
     this->sourceCallsignLen = len - 1;
-
-    cout << "Set Callsign " << scallsign <<  endl;
 
     return;
 }
@@ -62,7 +56,6 @@ void I2CController::setProperty(uint8_t *buf, int len) {
     uint8_t addr = buf[1]; 
     switch (addr) {
         case ADDR_SOURCE_CALLSIGN:
-            cout << "ADDR " << len << endl;
             this->setCallsign(buf, len);
             return;
     }
