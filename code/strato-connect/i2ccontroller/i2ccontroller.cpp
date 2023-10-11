@@ -21,7 +21,6 @@ void I2CController::onReceive(uint8_t *buf, int len) {
             this->twoWire->write(VAL_VERSION);
             return;
         case CMD_SET_PROPERTY:
-            // cout << "Set Property" << endl;
             this->setProperty(buf, len);
         case CMD_GET_PROPERTY:
             if (len < 1) {
