@@ -1,4 +1,5 @@
 #include "rf4463.hpp"
+#include <SPI.h>
 // #include "ax25.hpp"
 // #include "i2ccontroller.hpp"
 // #include <SPI.h>
@@ -14,7 +15,14 @@
 #define LED_TX 17
 #define INT 15
 
-RF4463 rf4463 = RF4463(IRQ, SDN, SEL);
+// Raspberry Pi pico RP2040 pinout
+#define SCK 10
+#define MISO 11
+#define MOSI 12
+#define CS 13
+
+SPIClass &spiClass = SPI1; 
+RF4463 rf4463(IRQ, SDN, SEL);
 unsigned char tx_buf[] = { "NEW HELLO WORLD!!!" };
 unsigned char val;
 unsigned char flag = 0;  //  flag of rx mode

@@ -8,10 +8,10 @@
 // Configuration parameters from "radio_config_Si4463.h"
 const uint8_t RF4463_CONFIGURATION_DATA[] = RADIO_CONFIGURATION_DATA_ARRAY;
 
-RF4463::RF4463(uint8_t nIRQPin, uint8_t sdnPin,uint8_t nSELPin)
+RF4463::RF4463(uint8_t nIRQPin, uint8_t SDN,uint8_t nSELPin)
 {
 	_nIRQPin = nIRQPin;
-	_sdnPin = sdnPin;
+	_SDN = SDN;
 	_nSELPin = nSELPin;
 }
 void RF4463::spiInit()
@@ -30,8 +30,8 @@ void RF4463::spiInit()
 }
 void RF4463::pinInit()
 {
-	pinMode(_sdnPin, OUTPUT);
-	digitalWrite(_sdnPin, HIGH);
+	pinMode(_SDN, OUTPUT);
+	digitalWrite(_SDN, HIGH);
 	pinMode(_nIRQPin, INPUT);
 }
 bool RF4463::init()
@@ -39,7 +39,6 @@ bool RF4463::init()
 	pinInit();
 	spiInit();
 
-	uint8_t buf[20];
 
 	// reset RF4463
 	powerOnReset();
@@ -137,9 +136,9 @@ void RF4463::powerOnReset()
 {
     uint8_t buf[]={RF_POWER_UP};
 
-    digitalWrite(_sdnPin, HIGH); 
+    digitalWrite(_SDN, HIGH); 
     delay(100);
-    digitalWrite(_sdnPin, LOW);
+    digitalWrite(_SDN, LOW);
     delay(20);						// wait for RF4463 stable
 
 	// send power up command
@@ -172,7 +171,7 @@ void RF4463::setConfig(const uint8_t* parameters,uint16_t paraLen)
 		pos=pos+cmdLen;
 	}
 }
-bool RF4463::checkDevice()
+bool checkDevice()
 {
 	uint8_t buf[9];
 	uint16_t partInfo;

@@ -6,9 +6,8 @@
 #include "Arduino.h"
 
 // typedef 	boolean			bool;
-typedef 	unsigned char	uint8_t;
-typedef 	unsigned int	uint16_t;
-typedef 	unsigned long	uint32_t;
+// typedef 	unsigned char	uint8_t;
+// typedef 	unsigned long	uint32_t;
 
 #define RF4463_CTS_REPLY					  0xff
 // Waiting time for a valid FFh CTS reading
@@ -473,11 +472,12 @@ class RF4463
 	public:
 	///  Constructor.
 	///  @param	nIRQPin		input pin,interrupt of RF4463
-	///  @param sdnPin 		output pin,enter shutdown mode when driving high
-	///  @param nSELPin		output pin,slave select pin
+	///  @param SDN 		output pin,enter shutdown mode when driving high
+	///  @param CS		    output pin,slave select pin
+	///  @param SPI 	    spi class
 	///  @note  Didn't use Arduino external interrupts there
 	///  In shutdown mode,RF setting will lose
-	RF4463(uint8_t nIRQPin = 2, uint8_t sdnPin = 9,uint8_t nSELPin = 10);
+	RF4463(uint8_t, uint8_t, uint8_t CS, SPIClass &SPI);
 	///  Initialise RF4463,parameters are from "radio_config_Si4463.h"
 	///  Setting parameter is 433.5Mhz,1.2kbps
 	///  To make sure RF4463 work, some parameters has been rewrite.
@@ -603,9 +603,9 @@ private:
 	/// input pin,interrupt of RF4463
 	uint8_t		_nIRQPin;
 	/// output pin,enter shutdown mode when driving high
-	uint8_t		_sdnPin;
+	uint8_t		_SDN;
 	/// output pin,slave select pin
-    uint8_t		_nSELPin;
+    uint8_t		_CS;
 
 };
 
